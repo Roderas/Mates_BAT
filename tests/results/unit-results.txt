@@ -1,0 +1,17 @@
+
+> mates-batx-docent@2.0.0 test
+> node tests/engine.test.mjs && node tests/sw.test.mjs
+
+{
+  "suite": "engine-data-generators",
+  "passed": 339,
+  "failed": 0,
+  "failures": []
+}
+{
+  "suite": "service-worker-and-manifest-simulation",
+  "passed": 24,
+  "failed": 0,
+  "scope": "https://example.test/repo/",
+  "limitation": "In-memory execution; not a real browser service worker installation."
+}
