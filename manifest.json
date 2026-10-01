@@ -1,0 +1,53 @@
+{
+  "id": "./",
+  "name": "Matemàtiques Batxillerat · Guia docent",
+  "short_name": "Mates Docent",
+  "description": "Temari docent, PAU 2024-2026 i laboratori matemàtic local.",
+  "lang": "ca",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f6f6",
+  "theme_color": "#133f4b",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Laboratori",
+      "url": "./#lab"
+    },
+    {
+      "name": "Banc PAU",
+      "url": "./#exams"
+    }
+  ]
+}

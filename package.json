@@ -1,0 +1,10 @@
+{
+  "name": "mates-batx-docent",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/engine.test.mjs && node tests/sw.test.mjs",
+    "serve": "python3 -m http.server 8080"
+  }
+}
