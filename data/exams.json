@@ -1,0 +1,1025 @@
+[
+  {
+    "id": "sci-2024-ord",
+    "track": "sci",
+    "year": 2024,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques/ord/pau_mate24jl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques/ord/pau_mate24jp.pdf",
+    "verified": "2026-10-01",
+    "format": "4 de 6",
+    "questions": [
+      {
+        "id": "sci-2024-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Funció, asímptotes, monotonia i tangent.",
+        "topics": [
+          "functions",
+          "limits",
+          "derivative",
+          "study"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      },
+      {
+        "id": "sci-2024-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Discussió d’un sistema paramètric i modificació d’una equació.",
+        "topics": [
+          "systems",
+          "parameters"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      },
+      {
+        "id": "sci-2024-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Terreny entre una corba cúbica i una recta: interseccions i àrea.",
+        "topics": [
+          "functions",
+          "integral"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      },
+      {
+        "id": "sci-2024-ord-4",
+        "label": "4",
+        "page": 8,
+        "title": "Extraccions amb i sense reemplaçament; recompte i model binomial.",
+        "topics": [
+          "probability",
+          "counting",
+          "binomial"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      },
+      {
+        "id": "sci-2024-ord-5",
+        "label": "5",
+        "page": 10,
+        "title": "Cobert de volum fix: modelitzar i minimitzar el cost.",
+        "topics": [
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      },
+      {
+        "id": "sci-2024-ord-6",
+        "label": "6",
+        "page": 12,
+        "title": "Pla mediatriu, distàncies i àrea d’un triangle espacial.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ord"
+      }
+    ]
+  },
+  {
+    "id": "sci-2024-ext",
+    "track": "sci",
+    "year": 2024,
+    "session": "ext",
+    "series": "3",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques/ext/pau_mate24sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques/ext/pau_mate24sp.pdf",
+    "verified": "2026-10-01",
+    "format": "4 de 6",
+    "questions": [
+      {
+        "id": "sci-2024-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Existència i unicitat d’una arrel; interval amb Bolzano.",
+        "topics": [
+          "continuity",
+          "derivative",
+          "study"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      },
+      {
+        "id": "sci-2024-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Sistema amb paràmetre i restricció addicional.",
+        "topics": [
+          "systems",
+          "parameters"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      },
+      {
+        "id": "sci-2024-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Logotip amb dues corbes: punts rellevants i àrees.",
+        "topics": [
+          "functions",
+          "integral"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      },
+      {
+        "id": "sci-2024-ext-4",
+        "label": "4",
+        "page": 8,
+        "title": "Prova diagnòstica hipotètica: binomial, probabilitat total i Bayes.",
+        "topics": [
+          "probability",
+          "bayes",
+          "binomial"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      },
+      {
+        "id": "sci-2024-ext-5",
+        "label": "5",
+        "page": 10,
+        "title": "Rectangle sota una exponencial: àrea màxima i tangent.",
+        "topics": [
+          "optimize",
+          "derivative",
+          "functions"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      },
+      {
+        "id": "sci-2024-ext-6",
+        "label": "6",
+        "page": 12,
+        "title": "Projecció ortogonal i plans paral·lels a distància fixada.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2024-ext"
+      }
+    ]
+  },
+  {
+    "id": "sci-2025-ord",
+    "track": "sci",
+    "year": 2025,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques/ord/pau_mate25jl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques/ord/pau_mate25jp.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "sci-2025-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Funció racional: talls, asímptotes i condicions sobre tangents.",
+        "topics": [
+          "functions",
+          "limits",
+          "derivative",
+          "study"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ord"
+      },
+      {
+        "id": "sci-2025-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Sistema paramètric amb una condició no lineal addicional.",
+        "topics": [
+          "systems",
+          "parameters"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ord"
+      },
+      {
+        "id": "sci-2025-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Peces defectuoses: probabilitat total, binomial i optimització.",
+        "topics": [
+          "probability",
+          "bayes",
+          "binomial",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ord"
+      },
+      {
+        "id": "sci-2025-ord-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Vela semiparabòlica: àrees separades per una costura i cost.",
+        "topics": [
+          "integral",
+          "functions"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2025-ord"
+      },
+      {
+        "id": "sci-2025-ord-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Plans perpendiculars i recta de punts equidistants.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2025-ord"
+      }
+    ]
+  },
+  {
+    "id": "sci-2025-ext",
+    "track": "sci",
+    "year": 2025,
+    "session": "ext",
+    "series": "3",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques/ext/pau_mate25sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques/ext/pau_mate25sp.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "sci-2025-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Terreny triangular: àrea en funció del pendent i mínim.",
+        "topics": [
+          "optimize",
+          "derivative",
+          "geometry2"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ext"
+      },
+      {
+        "id": "sci-2025-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Classificació i resolució d’un sistema amb paràmetre.",
+        "topics": [
+          "systems",
+          "parameters"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ext"
+      },
+      {
+        "id": "sci-2025-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Probabilitat condicionada i reconstrucció d’una cúbica amb extrems i inflexió.",
+        "topics": [
+          "probability",
+          "bayes",
+          "derivative",
+          "study",
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2025-ext"
+      },
+      {
+        "id": "sci-2025-ext-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Vitrall entre sinus i cosinus: intersecció, àrea i preu.",
+        "topics": [
+          "integral",
+          "trig",
+          "functions"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2025-ext"
+      },
+      {
+        "id": "sci-2025-ext-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Distància punt-pla i equacions de plans paral·lels.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2025-ext"
+      }
+    ]
+  },
+  {
+    "id": "sci-2026-ord",
+    "track": "sci",
+    "year": 2026,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques/ord/pau_mate26jl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques/ord/pau_mate26jt.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "sci-2026-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Funció a trossos: continuïtat, representació, integral i tangent.",
+        "topics": [
+          "continuity",
+          "functions",
+          "integral",
+          "derivative",
+          "study"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ord"
+      },
+      {
+        "id": "sci-2026-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Tres plans amb paràmetre: sistema i interpretació geomètrica.",
+        "topics": [
+          "systems",
+          "parameters",
+          "geometry3"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ord"
+      },
+      {
+        "id": "sci-2026-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Entrades, probabilitat total i Bayes; localització d’una arrel.",
+        "topics": [
+          "probability",
+          "bayes",
+          "continuity"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ord"
+      },
+      {
+        "id": "sci-2026-ord-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Barra repartida entre cercle i quadrat: minimitzar l’àrea.",
+        "topics": [
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2026-ord"
+      },
+      {
+        "id": "sci-2026-ord-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Pla, triangle i tetraedre: vectors, àrea i volum.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2026-ord"
+      }
+    ]
+  },
+  {
+    "id": "sci-2026-ext",
+    "track": "sci",
+    "year": 2026,
+    "session": "ext",
+    "series": "2",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques/ext/pau_mate26sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques/ext/pau_mate26st_v2.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "sci-2026-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Funció racional: extrems, asímptotes, gràfica i recta normal.",
+        "topics": [
+          "functions",
+          "limits",
+          "derivative",
+          "study"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ext"
+      },
+      {
+        "id": "sci-2026-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Sistema paramètric i interpretació de les seves solucions.",
+        "topics": [
+          "systems",
+          "parameters",
+          "geometry3"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ext"
+      },
+      {
+        "id": "sci-2026-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Aerogeneradors: binomial i àrea d’una pala entre corbes.",
+        "topics": [
+          "probability",
+          "binomial",
+          "integral"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "sci-2026-ext"
+      },
+      {
+        "id": "sci-2026-ext-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Desplegament d’una capsa amb tapa: volum màxim.",
+        "topics": [
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2026-ext"
+      },
+      {
+        "id": "sci-2026-ext-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Tapa d’una capsa a l’espai: vèrtexs, projecció i alçària.",
+        "topics": [
+          "geometry3",
+          "vectors3"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "sci-2026-ext"
+      }
+    ]
+  },
+  {
+    "id": "soc-2024-ord",
+    "track": "soc",
+    "year": 2024,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jp.pdf",
+    "verified": "2026-10-01",
+    "format": "4 de 6",
+    "questions": [
+      {
+        "id": "soc-2024-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Dues tarifes: comparació, intersecció i diferència màxima.",
+        "topics": [
+          "functions",
+          "algebra",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      },
+      {
+        "id": "soc-2024-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Producció de sofàs: sistema inicial indeterminat i nova condició.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      },
+      {
+        "id": "soc-2024-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Viatge amb tractor: model de cost i velocitat òptima.",
+        "topics": [
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      },
+      {
+        "id": "soc-2024-ord-4",
+        "label": "4",
+        "page": 8,
+        "title": "Combinacions de matrius màgiques i interpretació de paràmetres.",
+        "topics": [
+          "matrices",
+          "algebra"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      },
+      {
+        "id": "soc-2024-ord-5",
+        "label": "5",
+        "page": 10,
+        "title": "Unions, interseccions i probabilitat condicionada de dues preferències.",
+        "topics": [
+          "probability"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      },
+      {
+        "id": "soc-2024-ord-6",
+        "label": "6",
+        "page": 12,
+        "title": "Estimació d’una proporció i interval de confiança.",
+        "topics": [
+          "inference"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ord"
+      }
+    ]
+  },
+  {
+    "id": "soc-2024-ext",
+    "track": "soc",
+    "year": 2024,
+    "session": "ext",
+    "series": "3",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ext/pau_macs24sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ext/pau_macs24sp.pdf",
+    "verified": "2026-10-01",
+    "format": "4 de 6",
+    "questions": [
+      {
+        "id": "soc-2024-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Beneficis quadràtics: valors, equacions, signe i màxim.",
+        "topics": [
+          "functions",
+          "algebra",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      },
+      {
+        "id": "soc-2024-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Repartiment hipotètic d’inversions mitjançant un sistema lineal.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      },
+      {
+        "id": "soc-2024-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Capsa oberta de volum fix: minimitzar la superfície.",
+        "topics": [
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      },
+      {
+        "id": "soc-2024-ext-4",
+        "label": "4",
+        "page": 8,
+        "title": "Assistència al cinema: productes de matrius i recaptació.",
+        "topics": [
+          "matrices",
+          "algebra"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      },
+      {
+        "id": "soc-2024-ext-5",
+        "label": "5",
+        "page": 10,
+        "title": "Zones i horaris d’un centre: probabilitat total i Bayes.",
+        "topics": [
+          "probability",
+          "bayes"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      },
+      {
+        "id": "soc-2024-ext-6",
+        "label": "6",
+        "page": 12,
+        "title": "Temps de trajecte: interval per a la mitjana i interpretació.",
+        "topics": [
+          "normal",
+          "inference"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2024-ext"
+      }
+    ]
+  },
+  {
+    "id": "soc-2025-ord",
+    "track": "soc",
+    "year": 2025,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jp.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "soc-2025-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Habitacions d’hotel: sistema indeterminat i informació addicional.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ord"
+      },
+      {
+        "id": "soc-2025-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Model cúbic d’inversió: màxims i mínims globals en un interval.",
+        "topics": [
+          "functions",
+          "derivative",
+          "study",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ord"
+      },
+      {
+        "id": "soc-2025-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Pesos normals: probabilitat i interval de confiança per a la mitjana.",
+        "topics": [
+          "normal",
+          "inference",
+          "stats"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ord"
+      },
+      {
+        "id": "soc-2025-ord-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Congrés: probabilitat total, condicionada i recuperació de quantitats.",
+        "topics": [
+          "probability",
+          "bayes"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2025-ord"
+      },
+      {
+        "id": "soc-2025-ord-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Costos amb matrius i optimització d’ingressos d’un hotel.",
+        "topics": [
+          "matrices",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2025-ord"
+      }
+    ]
+  },
+  {
+    "id": "soc-2025-ext",
+    "track": "soc",
+    "year": 2025,
+    "session": "ext",
+    "series": "3",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ext/pau_macs25sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ext/pau_macs25sp.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "soc-2025-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Plantació de perers: model quadràtic de producció i màxim.",
+        "topics": [
+          "functions",
+          "optimize",
+          "derivative"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ext"
+      },
+      {
+        "id": "soc-2025-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Venda de sabates amb descomptes: sistema de tres incògnites.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ext"
+      },
+      {
+        "id": "soc-2025-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Visitants d’un parc: Bayes i interval de confiança d’una mitjana.",
+        "topics": [
+          "probability",
+          "bayes",
+          "inference"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2025-ext"
+      },
+      {
+        "id": "soc-2025-ext-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Vehicles: ingressos matricials, defectes condicionats i costos acumulats.",
+        "topics": [
+          "matrices",
+          "probability",
+          "bayes",
+          "functions"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2025-ext"
+      },
+      {
+        "id": "soc-2025-ext-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Vehicles: corregir una dada, probabilitat condicionada i costos.",
+        "topics": [
+          "algebra",
+          "probability",
+          "bayes",
+          "functions"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2025-ext"
+      }
+    ]
+  },
+  {
+    "id": "soc-2026-ord",
+    "track": "soc",
+    "year": 2026,
+    "session": "ord",
+    "series": "1",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ord/pau_macs26jl_v2.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ord/pau_macs26jt_v2.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "soc-2026-ord-1",
+        "label": "1",
+        "page": 2,
+        "title": "Seguidors d’una xarxa: extrems locals i globals i representació.",
+        "topics": [
+          "functions",
+          "derivative",
+          "study",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ord"
+      },
+      {
+        "id": "soc-2026-ord-2",
+        "label": "2",
+        "page": 4,
+        "title": "Preus de fruita: sistema parametritzat i nova informació.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ord"
+      },
+      {
+        "id": "soc-2026-ord-3",
+        "label": "3",
+        "page": 6,
+        "title": "Eficiència web: binomial aproximada per normal i interval d’una mitjana.",
+        "topics": [
+          "binomial",
+          "normal",
+          "inference"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ord",
+        "note": "L’enunciat v2 demana aproximar sense correcció de continuïtat. El criteri v2 (p. 6) explicita normalitat per passar de mitjana a proporció: sense aquesta hipòtesi, l’interval d’una mitjana no determina el percentatge sota el llindar."
+      },
+      {
+        "id": "soc-2026-ord-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Taula universitària: probabilitats condicionades, matrius i ingressos.",
+        "topics": [
+          "probability",
+          "matrices"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2026-ord"
+      },
+      {
+        "id": "soc-2026-ord-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Taula universitària: condicionades i sistema per al repartiment de beques.",
+        "topics": [
+          "probability",
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2026-ord"
+      }
+    ]
+  },
+  {
+    "id": "soc-2026-ext",
+    "track": "soc",
+    "year": 2026,
+    "session": "ext",
+    "series": "2",
+    "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ext/pau_macs26sl.pdf",
+    "correction": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ext/pau_macs26st.pdf",
+    "verified": "2026-10-01",
+    "format": "1, 2 i 3 + 4A o 4B",
+    "questions": [
+      {
+        "id": "soc-2026-ext-1",
+        "label": "1",
+        "page": 2,
+        "title": "Demanda: maximització d’ingressos i elasticitat definida a l’enunciat.",
+        "topics": [
+          "functions",
+          "derivative",
+          "optimize"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ext",
+        "note": "L’elasticitat s’introdueix amb una definició dins l’enunciat; no s’ha comptat com un saber nou independent."
+      },
+      {
+        "id": "soc-2026-ext-2",
+        "label": "2",
+        "page": 4,
+        "title": "Viatges d’un institut: sistema, parametrització i restriccions enteres.",
+        "topics": [
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ext"
+      },
+      {
+        "id": "soc-2026-ext-3",
+        "label": "3",
+        "page": 6,
+        "title": "Aprovats: probabilitat total, Bayes i interval de confiança d’una proporció.",
+        "topics": [
+          "probability",
+          "bayes",
+          "inference"
+        ],
+        "points": 2.5,
+        "optional": false,
+        "exam": "soc-2026-ext"
+      },
+      {
+        "id": "soc-2026-ext-4A",
+        "label": "4A",
+        "page": 8,
+        "title": "Activitats presencials: binomial, esperança i repartiment amb sistema.",
+        "topics": [
+          "binomial",
+          "systems"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2026-ext"
+      },
+      {
+        "id": "soc-2026-ext-4B",
+        "label": "4B",
+        "page": 8,
+        "title": "Inscripcions amb funció racional i repartiment matricial d’hores.",
+        "topics": [
+          "functions",
+          "optimize",
+          "matrices"
+        ],
+        "points": 2.5,
+        "optional": true,
+        "exam": "soc-2026-ext"
+      }
+    ]
+  }
+]

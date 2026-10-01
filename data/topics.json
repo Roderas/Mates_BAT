@@ -1,0 +1,2467 @@
+[
+  {
+    "id": "algebra",
+    "title": "Àlgebra de base i equacions",
+    "block": "Fonaments",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Operacions amb fraccions, signes i potències.",
+    "idea": "El llenguatge algebraic descriu relacions i restriccions. Abans de transformar una expressió, cal fixar on té sentit. Una equació no és una identitat: es busquen els valors que satisfan la igualtat. Elevar al quadrat pot afegir solucions; dividir per una expressió pot perdre’n. Aquest bloc es recupera quan apareixen dificultats, no només al setembre.",
+    "formulas": [
+      {
+        "formula": "ax²+bx+c=0; x=(-b±√(b²-4ac))/(2a)",
+        "meaning": "Per a a diferent de zero; el discriminant classifica les arrels reals."
+      },
+      {
+        "formula": "a(b+c)=ab+ac",
+        "meaning": "Factoritzar i desenvolupar són processos inversos."
+      },
+      {
+        "formula": "ln(ab)=ln(a)+ln(b)",
+        "meaning": "En nombres reals, a>0 i b>0. No s’aplica a una suma."
+      }
+    ],
+    "sequence": [
+      "Comença amb dues expressions numèriques per diferenciar suma, producte i potència.",
+      "Dibuixa la recta real i anota totes les restriccions abans de resoldre.",
+      "Contrasta una transformació equivalent amb una que només dona candidats.",
+      "Acaba substituint a l’equació original i expressant el conjunt de solucions."
+    ],
+    "errors": [
+      "Cancel·lar sumands com si fossin factors.",
+      "Oblidar la inversió del signe d’una desigualtat en multiplicar per un negatiu.",
+      "Donar per bona una arrel que anul·la un denominador."
+    ],
+    "examples": [
+      {
+        "question": "Resol √(x+2)=x i justifica el domini.",
+        "steps": [
+          "Cal x≥0 perquè l’arrel és no negativa.",
+          "Quadrat: x+2=x²; (x-2)(x+1)=0.",
+          "Candidats 2 i -1. Només x=2 satisfà l’original.",
+          "Comprovació: √4=2."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què x=-1 surt al càlcul però no és solució?",
+    "source": {
+      "sci": [
+        15,
+        19
+      ],
+      "soc": [
+        15,
+        18
+      ]
+    },
+    "tool": "equation",
+    "expression": "x^2-x-2",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8,
+      "soc1": 6
+    }
+  },
+  {
+    "id": "complex",
+    "title": "Nombres complexos",
+    "block": "Fonaments",
+    "courses": [
+      "sci1"
+    ],
+    "prerequisites": "Equacions quadràtiques, potències i vectors al pla.",
+    "idea": "Els complexos amplien els reals i permeten resoldre equacions com x²+1=0. La representació a+bi connecta àlgebra i pla. La forma polar ajuda a interpretar multiplicacions com canvis de mòdul i girs. El document curricular n’explicita el paper com a solucions d’equacions polinòmiques; el desenvolupament polar és una proposta docent.",
+    "formulas": [
+      {
+        "formula": "i²=-1; z=a+bi",
+        "meaning": "a i b són reals. No s’ordenen els complexos com els nombres reals."
+      },
+      {
+        "formula": "|z|=√(a²+b²); conjugat(z)=a-bi",
+        "meaning": "El producte per un conjugat ajuda a dividir."
+      },
+      {
+        "formula": "z=r(cosθ+i sinθ)",
+        "meaning": "Mòdul no negatiu; argument definit mòdul 2π."
+      }
+    ],
+    "sequence": [
+      "Parteix de x²=-1 i explica per què no té solucions reals.",
+      "Representa 1+i i el seu conjugat sobre eixos real i imaginari.",
+      "Calcula un producte i relaciona’l amb el pla.",
+      "Comprova cada arrel per substitució."
+    ],
+    "errors": [
+      "Aplicar sense condicions √(a)√(b)=√(ab) a radicands negatius.",
+      "Confondre mòdul i part real.",
+      "Oblidar que i²=-1 en un producte."
+    ],
+    "examples": [
+      {
+        "question": "Resol z²-2z+5=0.",
+        "steps": [
+          "Discriminant: 4-20=-16.",
+          "Arrels: z=(2±4i)/2=1±2i.",
+          "Per a 1+2i: z²=-3+4i; z²-2z+5=0.",
+          "Les arrels són conjugades, coherent amb els coeficients reals."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Explica la diferència entre |1+2i| i 1+2i.",
+    "source": {
+      "sci": [
+        14
+      ]
+    },
+    "tool": "equation",
+    "expression": "x^2-2*x+5",
+    "hours": 4,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 4
+    }
+  },
+  {
+    "id": "successions",
+    "title": "Successions i recurrències",
+    "block": "Fonaments",
+    "courses": [
+      "sci1",
+      "soc1"
+    ],
+    "prerequisites": "Patrons, percentatges i expressió algebraica.",
+    "idea": "Una successió és una funció de variable natural. Una expressió explícita calcula directament un terme; una recurrència necessita un valor inicial i una regla de pas. El treball important és traduir entre una taula, una narració i totes dues expressions, i discutir el comportament a llarg termini.",
+    "formulas": [
+      {
+        "formula": "aₙ=a₁+(n-1)d",
+        "meaning": "Progressió aritmètica: diferència constant."
+      },
+      {
+        "formula": "aₙ=a₁ r^(n-1)",
+        "meaning": "Progressió geomètrica: raó constant."
+      },
+      {
+        "formula": "Sₙ=a₁(1-r^n)/(1-r), r≠1",
+        "meaning": "Suma finita geomètrica; si r=1, Sₙ=na₁."
+      }
+    ],
+    "sequence": [
+      "Dona una taula i demana comparar diferències i quocients.",
+      "Construeix una recurrència amb la condició inicial ben visible.",
+      "Deriva l’expressió explícita per iteració.",
+      "Diferencia observació de termes i justificació general."
+    ],
+    "errors": [
+      "Confondre l’índex n amb el valor aₙ.",
+      "Oblidar a₀ o a₁ en una recurrència.",
+      "Extrapolar un patró finit com si fos l’única regla possible."
+    ],
+    "examples": [
+      {
+        "question": "Una quantitat inicial de 200 es multiplica cada període per 0,8. Expressa i calcula el quart canvi.",
+        "steps": [
+          "a₀=200; aₙ₊₁=0,8aₙ.",
+          "Per iteració, aₙ=200(0,8)^n.",
+          "a₄=81,92.",
+          "Com que 0<0,8<1, els termes positius decreixen cap a zero."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quina diferència hi ha entre a₄ i la suma fins a a₄?",
+    "source": {
+      "sci": [
+        14,
+        15
+      ],
+      "soc": [
+        14,
+        15
+      ]
+    },
+    "tool": "calculus",
+    "expression": "200*0.8^x",
+    "hours": 5,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 4,
+      "soc1": 4
+    }
+  },
+  {
+    "id": "functions",
+    "title": "Funcions, dominis i models",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Àlgebra, coordenades i intervals.",
+    "idea": "Una funció associa un únic valor de sortida a cada entrada del domini. La fórmula, la taula, la gràfica i el context expliquen aspectes diferents del mateix model. El domini algebraic pot ser més gran que el domini realista del problema. El recorregut no es dedueix intercanviant mecànicament eixos.",
+    "formulas": [
+      {
+        "formula": "D(f/g)=D(f)∩D(g), amb g(x)≠0",
+        "meaning": "Els zeros del denominador s’exclouen."
+      },
+      {
+        "formula": "D(ln u): u(x)>0; D(√u): u(x)≥0",
+        "meaning": "Restriccions en nombres reals."
+      },
+      {
+        "formula": "(f∘g)(x)=f(g(x))",
+        "meaning": "g(x) ha de pertànyer al domini de f."
+      },
+      {
+        "formula": "y=a f(b(x-h))+k",
+        "meaning": "Desplaçaments i escales; l’escala horitzontal depèn de 1/|b|."
+      }
+    ],
+    "sequence": [
+      "Parteix d’una magnitud amb unitats i defineix què representen x i y.",
+      "Mostra la mateixa relació en taula, dibuix i fórmula.",
+      "Calcula el domini abans de dibuixar; separa restriccions algebraiques i contextuals.",
+      "Compara models lineals, quadràtics, exponencials i racionals amb canvis de paràmetres."
+    ],
+    "errors": [
+      "Confondre f(a) amb una solució de f(x)=a.",
+      "Suposar que una gràfica mostrejada demostra el domini complet.",
+      "Llegir pendent sense mirar les escales dels eixos."
+    ],
+    "examples": [
+      {
+        "question": "Estudia el domini de f(x)=√(x+1)/(x-2).",
+        "steps": [
+          "L’arrel requereix x+1≥0, és a dir, x≥-1.",
+          "El denominador exigeix x≠2.",
+          "Domini: [-1,2)∪(2,+∞).",
+          "f(-1)=0; x=2 queda exclòs encara que el dibuix sembli unir punts."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Un model de vendes permet x=-1? Separa la resposta algebraica de la contextual.",
+    "source": {
+      "sci": [
+        15,
+        19
+      ],
+      "soc": [
+        15,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "sqrt(x+1)/(x-2)",
+    "hours": 9,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8,
+      "soc1": 10,
+      "sci2": 3,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "limits",
+    "title": "Límits i asímptotes",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Domini, factorització i comportament de funcions.",
+    "idea": "El límit descriu el comportament de la funció prop d’un punt, no necessàriament el valor en aquell punt. Els dos límits laterals han de coincidir per parlar d’un límit bilateral. 0/0 i ∞/∞ són indeterminacions: informen que la substitució no resol el problema, no són resultats.",
+    "formulas": [
+      {
+        "formula": "lim(x→a) f(x)=L",
+        "meaning": "Per a x prou proper a a, f(x) s’apropa a L dins el domini."
+      },
+      {
+        "formula": "x=a és asímptota vertical si algun límit lateral és infinit",
+        "meaning": "No n’hi ha prou amb un denominador nul."
+      },
+      {
+        "formula": "m=lim f(x)/x; b=lim(f(x)-mx)",
+        "meaning": "Si m i b són finits, y=mx+b és una asímptota a l’extrem estudiat."
+      },
+      {
+        "formula": "grau P < grau Q ⇒ lim(P/Q)=0 a l’infinit",
+        "meaning": "Per a polinomis no nuls; amb graus iguals, quocient de coeficients dominants."
+      }
+    ],
+    "sequence": [
+      "Fes una taula bilateral amb valors propers sense substituir exactament al punt.",
+      "Dibuixa un forat i separa verbalment aproximar-se i arribar.",
+      "Resol 0/0 factoritzant, explicant per què es cancel·la només fora del punt.",
+      "Per a asímptotes, justifica els signes laterals i contrasta el dibuix amb el càlcul."
+    ],
+    "errors": [
+      "Concloure que 0/0=0 o 1.",
+      "Confondre asímptota amb una recta que la corba mai pot tallar.",
+      "Donar un límit bilateral quan els laterals són +∞ i -∞."
+    ],
+    "examples": [
+      {
+        "question": "Calcula lim(x→1) (x²-1)/(x-1) i explica el dibuix.",
+        "steps": [
+          "La substitució dona 0/0.",
+          "Factoritzem x²-1=(x-1)(x+1).",
+          "Per a x≠1, la funció coincideix amb x+1; el límit és 2.",
+          "L’original no està definida a 1: hi ha un forat, no una asímptota vertical."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Calcula els límits laterals de 1/(x-2) a 2.",
+        "steps": [
+          "El numerador és positiu.",
+          "A l’esquerra el denominador és negatiu i tendeix a zero: límit -∞.",
+          "A la dreta és positiu: límit +∞.",
+          "No hi ha límit bilateral comú; x=2 és asímptota vertical."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Com canviaria el resultat si el denominador fos (x-1)²?",
+    "source": {
+      "sci": [
+        14,
+        19
+      ],
+      "soc": [
+        14,
+        18
+      ]
+    },
+    "tool": "limit",
+    "expression": "(x^2-1)/(x-1)",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 6,
+      "soc1": 6,
+      "sci2": 4,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "continuity",
+    "title": "Continuïtat, trams i Bolzano",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Límits laterals i valors de funcions.",
+    "idea": "La continuïtat en un punt obliga a tenir un valor definit, un límit i coincidència entre tots dos. Les funcions a trossos exigeixen analitzar cada punt d’empalmament. Bolzano assegura existència d’una arrel per canvi de signe d’una funció contínua; no assegura ni unicitat ni una fórmula per a l’arrel.",
+    "formulas": [
+      {
+        "formula": "lim(x→a-) f(x)=f(a)=lim(x→a+) f(x)",
+        "meaning": "Criteri de continuïtat en un punt interior del domini."
+      },
+      {
+        "formula": "f contínua a [a,b], f(a)f(b)<0 ⇒ existeix c∈(a,b): f(c)=0",
+        "meaning": "Teorema de Bolzano; calen totes les hipòtesis."
+      },
+      {
+        "formula": "Derivable en a ⇒ contínua en a",
+        "meaning": "La implicació inversa no és certa, com mostra |x| a zero."
+      }
+    ],
+    "sequence": [
+      "Dibuixa dos trams amb un punt buit i un punt ple.",
+      "Escriu tres línies separades: límit esquerre, valor i límit dret.",
+      "Planteja equacions per al paràmetre de l’empalmament.",
+      "Aplica Bolzano a una equació sense arrel evident i afegeix monotonia només si es vol unicitat."
+    ],
+    "errors": [
+      "Exigir derivades iguals per a una simple pregunta de continuïtat.",
+      "Aplicar Bolzano a 1/x sobre [-1,1].",
+      "Confondre una arrel aproximada amb la prova que existeix."
+    ],
+    "examples": [
+      {
+        "question": "Justifica que x³+x-1=0 té una única arrel real.",
+        "steps": [
+          "És un polinomi i, per tant, continu.",
+          "f(0)=-1 i f(1)=1: Bolzano garanteix una arrel a (0,1).",
+          "f′(x)=3x²+1>0 per a tot x: la funció és estrictament creixent.",
+          "Només pot tallar l’eix una vegada; bisecció dona aproximadament 0,682328."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "f(x)=ax+1 si x<2 i f(x)=x² si x≥2. Fes-la contínua.",
+        "steps": [
+          "Límit esquerre en 2: 2a+1.",
+          "Límit dret i f(2): 4.",
+          "2a+1=4, per tant a=3/2.",
+          "Les derivades laterals serien 3/2 i 4: continuïtat no implica derivabilitat."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quina part de l’argument assegura existència i quina unicitat?",
+    "source": {
+      "sci": [
+        14,
+        19
+      ],
+      "soc": [
+        14,
+        18
+      ]
+    },
+    "tool": "equation",
+    "expression": "x^3+x-1",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 4,
+      "soc1": 4,
+      "sci2": 4,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "derivative",
+    "title": "Derivada: significat i tangent",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Funcions, pendent d’una recta i límits.",
+    "idea": "La derivada mesura el canvi instantani i el pendent local. La taxa mitjana correspon a una secant; quan l’increment tendeix a zero, les secants poden convergir a una tangent. El quocient conserva unitats: si f és una posició en metres i x temps en segons, f′ s’expressa en m/s. f′(a) és un nombre; f′ és una nova funció.",
+    "formulas": [
+      {
+        "formula": "TVM=[f(b)-f(a)]/(b-a)",
+        "meaning": "Pendent de la secant; canvi mitjà per unitat d’entrada."
+      },
+      {
+        "formula": "f′(a)=lim(h→0) [f(a+h)-f(a)]/h",
+        "meaning": "Si el límit existeix i és finit; no se substitueix h=0 abans de simplificar."
+      },
+      {
+        "formula": "y=f(a)+f′(a)(x-a)",
+        "meaning": "Recta tangent al punt (a,f(a))."
+      },
+      {
+        "formula": "m normal=-1/f′(a)",
+        "meaning": "Si f′(a)≠0; amb tangent horitzontal la normal és x=a."
+      }
+    ],
+    "sequence": [
+      "Comença amb una pregunta de velocitat, pendent o cost marginal, no amb la taula de derivades.",
+      "Dibuixa P=(a,f(a)) i Q=(a+h,f(a+h)); varia h al laboratori.",
+      "Desenvolupa la definició per a x² i verbalitza la cancel·lació amb h≠0.",
+      "Passa del pendent a l’equació de la tangent i comprova que passa pel punt.",
+      "Contrasta amb ",
+      "x",
+      " a zero: pendents laterals diferents, no hi ha derivada."
+    ],
+    "errors": [
+      "Dir que la derivada és la tangent: és el seu pendent.",
+      "Afirmar que una tangent només toca la corba en un punt.",
+      "Oblidar el valor f(a) en l’equació.",
+      "Interpretar f′(a)=0 com un màxim automàtic."
+    ],
+    "examples": [
+      {
+        "question": "Troba la tangent i la normal a f(x)=x² en x=2, a partir de la definició.",
+        "steps": [
+          "[f(2+h)-f(2)]/h=[(2+h)²-4]/h=4+h, amb h≠0.",
+          "Quan h→0, f′(2)=4. El punt és (2,4).",
+          "Tangent: y-4=4(x-2), és a dir, y=4x-4.",
+          "Normal: y-4=-(x-2)/4.",
+          "Comprovació: totes dues passen per (2,4); els pendents multipliquen -1."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Mostra que f(x)=|x| no és derivable en x=0.",
+        "steps": [
+          "f(0)=0.",
+          "Si h>0, ",
+          "h",
+          "/h=1.",
+          "Si h<0, ",
+          "h",
+          "/h=-1.",
+          "Els límits laterals són diferents: la derivada no existeix, malgrat que la funció és contínua."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què passaria amb la normal a x=0?",
+    "source": {
+      "sci": [
+        14,
+        19
+      ],
+      "soc": [
+        14,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "x^2",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 4,
+      "soc1": 6,
+      "sci2": 3,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "rules",
+    "title": "Regles de derivació i cadena",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Significat de derivada, potències i composició.",
+    "idea": "Les regles comprimeixen càlculs de límits repetitius. Cal reconèixer primer l’operació exterior: suma, producte, quocient o composició. La cadena no és un truc, sinó la combinació de dues taxes de canvi. Abans de simplificar la derivada, conserva les restriccions de la funció original.",
+    "formulas": [
+      {
+        "formula": "(u+v)′=u′+v′; (uv)′=u′v+uv′",
+        "meaning": "Un producte no es deriva multiplicant derivades."
+      },
+      {
+        "formula": "(u/v)′=(u′v-uv′)/v²",
+        "meaning": "Requereix v≠0."
+      },
+      {
+        "formula": "(f(g(x)))′=f′(g(x))g′(x)",
+        "meaning": "Regla de la cadena."
+      },
+      {
+        "formula": "(u^n)′=nu^(n-1)u′; (e^u)′=e^u u′",
+        "meaning": "En intervals on existeixen les expressions reals corresponents."
+      },
+      {
+        "formula": "(ln u)′=u′/u; (sin u)′=cos(u)u′",
+        "meaning": "Per a ln u: u>0; trigonometria en radians."
+      }
+    ],
+    "sequence": [
+      "Identifica l’estructura exterior amb parèntesis abans de calcular.",
+      "Fes dues columnes: funció exterior i funció interior.",
+      "Deriva sense simplificar, explicant cada regla.",
+      "Simplifica només al final i prova el pendent en un punt amb una secant propera."
+    ],
+    "errors": [
+      "Oblidar la derivada de l’interior.",
+      "Fer (u/v)′=u′/v′.",
+      "Derivar sin en graus usant la fórmula en radians.",
+      "Cancel·lar un factor i oblidar el domini original."
+    ],
+    "examples": [
+      {
+        "question": "Deriva f(x)=ln(3x²+1) i calcula f′(1).",
+        "steps": [
+          "Exterior: ln u; interior: u=3x²+1.",
+          "u′=6x; f′=u′/u=6x/(3x²+1).",
+          "3x²+1>0 sempre: domini real complet.",
+          "f′(1)=6/4=1,5."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Deriva (2x+1)⁴ e^x.",
+        "steps": [
+          "Producte u v amb u=(2x+1)⁴ i v=e^x.",
+          "u′=8(2x+1)³ per la cadena; v′=e^x.",
+          "f′=8(2x+1)³ e^x+(2x+1)⁴ e^x.",
+          "Es pot factoritzar e^x(2x+1)³(2x+9)."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què 1/(3x²+1) és una resposta incompleta?",
+    "source": {
+      "sci": [
+        14,
+        19
+      ],
+      "soc": [
+        14,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "ln(3*x^2+1)",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 6,
+      "soc1": 6,
+      "sci2": 4,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "study",
+    "title": "Estudi complet i lectura de gràfiques",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Domini, límits i derivades primera i segona.",
+    "idea": "Estudiar una funció consisteix a connectar propietats, no a omplir una llista sense sentit. El signe de f dona posició respecte de l’eix; el de f′, monotonia; el de f′′, curvatura. Els punts estacionaris només són candidats a extrems. Un punt d’inflexió requereix canvi de curvatura, no només f′′=0.",
+    "formulas": [
+      {
+        "formula": "f′>0 en un interval ⇒ f estrictament creixent",
+        "meaning": "Hipòtesi: funció derivable a l’interval."
+      },
+      {
+        "formula": "Canvi de f′ de + a -: màxim; de - a +: mínim",
+        "meaning": "El criteri de signe permet classificar quan f′′ no decideix."
+      },
+      {
+        "formula": "f′′>0: curvatura cap amunt; f′′<0: cap avall",
+        "meaning": "Especifica la convencio en lloc de dependre només de còncava/convexa."
+      },
+      {
+        "formula": "f contínua en [a,b] ⇒ té màxim i mínim absoluts",
+        "meaning": "Cal comparar candidats interiors i extrems de l’interval."
+      }
+    ],
+    "sequence": [
+      "Fixa domini, talls i simetries; prediu l’aspecte abans de derivar.",
+      "Afegeix límits i asímptotes.",
+      "Construeix una taula de signes de f′ amb punts exclosos i punts no derivables.",
+      "Calcula f als candidats, no només les abscisses.",
+      "Estudia f′′ i dibuixa una gràfica coherent amb totes les condicions."
+    ],
+    "errors": [
+      "Confondre signe de f amb signe de f′.",
+      "Classificar tots els zeros de f′ com a extrems.",
+      "Oblidar candidats no derivables o extrems del domini.",
+      "Donar f′′=0 com a prova d’inflexió."
+    ],
+    "examples": [
+      {
+        "question": "Estudia extrems i inflexió de f(x)=x³-3x.",
+        "steps": [
+          "f′=3x²-3=3(x-1)(x+1).",
+          "Creix a (-∞,-1), decreix a (-1,1) i creix a (1,+∞).",
+          "Màxim local (-1,2); mínim local (1,-2).",
+          "f′′=6x canvia de signe a zero: inflexió (0,0).",
+          "No hi ha extrems absoluts en tot R."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Comprova amb x³ que tangent horitzontal no implica extrem.",
+    "source": {
+      "sci": [
+        15,
+        19
+      ],
+      "soc": [
+        15,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "x^3-3*x",
+    "hours": 10,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 6,
+      "soc1": 8,
+      "sci2": 6,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "optimize",
+    "title": "Optimització i modelització",
+    "block": "Anàlisi",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Derivades, extrems i restriccions algebraiques.",
+    "idea": "La part principal d’una optimització és construir el model: què varia, què està fixat i què volem minimitzar o maximitzar. Una restricció permet reduir la funció objectiu a una variable. La solució ha de pertànyer al domini físic i s’ha de justificar com a òptim, no només com a zero d’una derivada.",
+    "formulas": [
+      {
+        "formula": "B(q)=I(q)-C(q)",
+        "meaning": "Benefici: ingressos menys costos; defineix les unitats."
+      },
+      {
+        "formula": "I(p)=p·d(p)",
+        "meaning": "Ingressos iguals a preu per quantitat demanada."
+      },
+      {
+        "formula": "f′(c)=0",
+        "meaning": "Condició necessària per a un extrem interior derivable, no suficient."
+      }
+    ],
+    "sequence": [
+      "Fes un dibuix o una taula amb totes les variables i unitats.",
+      "Escriu la restricció i aïlla una variable.",
+      "Construeix la funció objectiu i el domini abans de derivar.",
+      "Troba candidats i compara valors o signes.",
+      "Interpreta totes les dimensions, el valor òptim i la viabilitat; si es demanen enters, comprova els veïns."
+    ],
+    "errors": [
+      "Maximitzar una longitud quan es demana una àrea.",
+      "Oblidar una paret, tapa o cost fix del context.",
+      "Escollir un candidat fora del domini.",
+      "Arrodonir abans de comparar dues solucions enteres."
+    ],
+    "examples": [
+      {
+        "question": "Un rectangle té perímetre 20 m. Quines dimensions en maximitzen l’àrea?",
+        "steps": [
+          "2x+2y=20, per tant y=10-x i 0<x<10.",
+          "A(x)=x(10-x)=10x-x².",
+          "A′=10-2x=0 dona x=5.",
+          "A′′=-2<0; l’àrea tendeix a zero als extrems del domini.",
+          "Dimensions 5 m × 5 m; àrea màxima 25 m²."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Una demanda és d(p)=100-2p per a 0≤p≤50. Maximitza ingressos.",
+        "steps": [
+          "I(p)=100p-2p².",
+          "I′=100-4p=0 dona p=25.",
+          "I′′=-4<0 i als extrems els ingressos són zero.",
+          "Demanda 50 unitats, ingressos màxims 1250."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què canvia si un dels costats aprofita una paret i no consumeix material?",
+    "source": {
+      "sci": [
+        19
+      ],
+      "soc": [
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "10*x-x^2",
+    "hours": 10,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "soc1": 8,
+      "sci2": 7,
+      "soc2": 8
+    }
+  },
+  {
+    "id": "primitive",
+    "title": "Primitives i tècniques elementals",
+    "block": "Anàlisi",
+    "courses": [
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Regles de derivació i reconeixement de composicions.",
+    "idea": "Una primitiva de f és una funció F amb F′=f. En un interval, totes les primitives difereixen en una constant. La primera estratègia és reconèixer una derivada coneguda, no inventar una regla inversa per a productes o quocients. El motor automàtic implementa un subconjunt declarat; els exemples docents poden tractar més tècniques amb verificació manual.",
+    "formulas": [
+      {
+        "formula": "∫ x^n dx=x^(n+1)/(n+1)+C, n≠-1",
+        "meaning": "La regla necessita intervals on la potència real estigui definida."
+      },
+      {
+        "formula": "∫ 1/x dx=ln|x|+C",
+        "meaning": "Vàlida a cada interval sense zero; no connecta constants entre intervals."
+      },
+      {
+        "formula": "∫ f′(x)/f(x) dx=ln|f(x)|+C",
+        "meaning": "Reconeixement d’una derivada logarítmica."
+      },
+      {
+        "formula": "∫ u′e^u dx=e^u+C; ∫ u′ cos u dx=sin u+C",
+        "meaning": "Substitució immediata."
+      },
+      {
+        "formula": "∫ u v′ dx=uv-∫ u′v dx",
+        "meaning": "Integració per parts: desenvolupament docent, no disponible automàticament en tots els casos."
+      }
+    ],
+    "sequence": [
+      "Escriu tres funcions que tinguin la mateixa derivada per donar sentit a +C.",
+      "Relaciona cada primitiva amb una regla de derivació.",
+      "Detecta si falta un factor constant de la cadena.",
+      "Comprova sempre derivant F i especifica l’interval de validesa.",
+      "Separa el fet que existeixi una primitiva del fet que el programa pugui expressar-la."
+    ],
+    "errors": [
+      "Oblidar +C.",
+      "Aplicar la regla de potències a n=-1.",
+      "Integrar un producte com el producte d’integrals.",
+      "Ometre el factor 1/a en una composició ax+b."
+    ],
+    "examples": [
+      {
+        "question": "Troba una primitiva de 6x/(3x²+1).",
+        "steps": [
+          "Es reconeix u=3x²+1 i u′=6x.",
+          "∫ u′/u dx=ln",
+          "u",
+          "+C.",
+          "Com que 3x²+1>0, F(x)=ln(3x²+1)+C.",
+          "Derivant F es recupera exactament 6x/(3x²+1). Aquest reconeixement general es treballa a mà; el motor de primitives és més restringit."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Integra 4x³+6x-2.",
+        "steps": [
+          "Linealitat: s’integren els tres termes.",
+          "∫4x³=x⁴; ∫6x=3x²; ∫(-2)=-2x.",
+          "F=x⁴+3x²-2x+C.",
+          "Derivar F recupera l’integrand."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què sumar 8 a F no altera la resposta?",
+    "source": {
+      "sci": [
+        18
+      ],
+      "soc": [
+        17,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "3*x^2+2*x+1",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 5,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "integral",
+    "title": "Integral definida, acumulació i àrees",
+    "block": "Anàlisi",
+    "courses": [
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Primitives, gràfiques, signe i interseccions.",
+    "idea": "La integral definida acumula contribucions amb signe. Començar amb rectangles dona sentit geomètric al pas d’una suma a una integral. L’àrea geomètrica no pot ser negativa, però una integral sí. El teorema fonamental connecta acumulació i derivada; la regla de Barrow permet avaluar mitjançant una primitiva quan s’han comprovat les hipòtesis.",
+    "formulas": [
+      {
+        "formula": "∫[a,b] f(x) dx=F(b)-F(a), si F′=f",
+        "meaning": "Per exemple amb f contínua a [a,b]."
+      },
+      {
+        "formula": "A=∫[a,b] |f(x)| dx",
+        "meaning": "Àrea entre la gràfica i l’eix; separa als canvis de signe."
+      },
+      {
+        "formula": "A=∫[a,b] |f(x)-g(x)| dx",
+        "meaning": "Entre dues corbes: determina abans les interseccions."
+      },
+      {
+        "formula": "d/dx ∫[a,x] f(t)dt=f(x)",
+        "meaning": "Per a f contínua; connexió entre acumulació i taxa de canvi."
+      }
+    ],
+    "sequence": [
+      "Parteix de velocitat constant a trossos o de rectangles sota una corba.",
+      "Fes visibles les contribucions negatives sota l’eix.",
+      "Connecta amb la primitiva i mostra F(b)-F(a).",
+      "En àrees, resol interseccions, dibuixa i identifica quina corba queda a sobre en cada interval.",
+      "Conserva unitats quadrades i verifica el resultat amb una estimació geomètrica."
+    ],
+    "errors": [
+      "Fer F(a)-F(b).",
+      "Confondre integral i àrea quan hi ha canvis de signe.",
+      "Integrar a través d’una asímptota sense tractar la integral impròpia.",
+      "Aplicar valor absolut al resultat global en lloc de separar contribucions."
+    ],
+    "examples": [
+      {
+        "question": "Compara la integral de x a [-1,1] amb l’àrea entre la recta i l’eix.",
+        "steps": [
+          "Una primitiva és x²/2.",
+          "Integral: 1/2-1/2=0; les contribucions es cancel·len.",
+          "Àrea: -∫[-1,0]x dx+∫[0,1]x dx=1/2+1/2=1.",
+          "El dibuix mostra dos triangles d’àrea 1/2 cadascun."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Calcula l’àrea entre y=x i y=x².",
+        "steps": [
+          "Interseccions: x=x² dona x=0 i x=1.",
+          "A (0,1), x>x².",
+          "A=∫[0,1](x-x²) dx.",
+          "A=[x²/2-x³/3] de 0 a 1=1/6."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què |∫f| no és, en general, igual a ∫|f|?",
+    "source": {
+      "sci": [
+        18
+      ],
+      "soc": [
+        17,
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "x",
+    "hours": 10,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 8,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "volumes",
+    "title": "Volums de revolució",
+    "block": "Anàlisi",
+    "courses": [
+      "sci2"
+    ],
+    "prerequisites": "Integral definida i àrea d’un cercle.",
+    "idea": "El volum es calcula sumant seccions perpendiculars a un eix. Per rotació al voltant de l’eix x, cada secció és un disc o una corona circular. La fórmula s’ha de reconstruir a partir de l’àrea de la secció i no memoritzar sense dibuix. És un saber explícit de Matemàtiques II al document adjunt encara que no s’hagi observat en les sis proves de Matemàtiques de la mostra.",
+    "formulas": [
+      {
+        "formula": "V=π∫[a,b] R(x)² dx",
+        "meaning": "Mètode de discs al voltant de l’eix x."
+      },
+      {
+        "formula": "V=π∫[a,b] [R(x)²-r(x)²]dx",
+        "meaning": "Corones, amb R≥r≥0: no és (R-r)²."
+      }
+    ],
+    "sequence": [
+      "Dibuixa la regió plana i l’eix de gir.",
+      "Talla-la en llesques i identifica radi exterior i interior.",
+      "Construeix àrea de secció per gruix.",
+      "Integra i comprova les unitats cúbiques i l’ordre de magnitud."
+    ],
+    "errors": [
+      "Elevar al quadrat la diferència de radis.",
+      "Oblidar π.",
+      "Usar una fórmula respecte de x amb radis que depenen de y."
+    ],
+    "examples": [
+      {
+        "question": "Gira la regió sota y=x, 0≤x≤2, al voltant de l’eix x.",
+        "steps": [
+          "Radi del disc: R(x)=x.",
+          "V=π∫[0,2]x² dx=π[x³/3] de 0 a 2.",
+          "V=8π/3 unitats cúbiques.",
+          "Coincideix amb un con de radi 2 i altura 2: (1/3)πr²h."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Com canvia el radi si l’eix de gir és y=-1?",
+    "source": {
+      "sci": [
+        18
+      ]
+    },
+    "tool": "calculus",
+    "expression": "pi*x^2",
+    "hours": 4,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 3
+    }
+  },
+  {
+    "id": "trig",
+    "title": "Trigonometria i models periòdics",
+    "block": "Geometria",
+    "courses": [
+      "sci1",
+      "sci2"
+    ],
+    "prerequisites": "Triangles, proporcions, angles i radians.",
+    "idea": "El cercle unitat dona una definició de sinus i cosinus que no depèn d’un triangle concret i permet angles de qualsevol amplitud. La trigonometria resol mesures al pla i modelitza fenòmens periòdics. A Matemàtiques II també serveix per llegir corbes i calcular àrees, com mostra la pregunta 4A de setembre de 2025.",
+    "formulas": [
+      {
+        "formula": "sin²θ+cos²θ=1; tanθ=sinθ/cosθ",
+        "meaning": "La tangent exigeix cosθ≠0."
+      },
+      {
+        "formula": "a/sin A=b/sin B=c/sin C",
+        "meaning": "Teorema del sinus; vigila l’ambigüitat d’un angle a partir del sinus."
+      },
+      {
+        "formula": "c²=a²+b²-2ab cos C",
+        "meaning": "Teorema del cosinus."
+      },
+      {
+        "formula": "f(x)=A sin(ωx+φ)+d; T=2π/|ω|",
+        "meaning": "Amplitud |A| i període T, per a ω≠0."
+      }
+    ],
+    "sequence": [
+      "Uneix el triangle rectangle amb un punt al cercle unitat.",
+      "Marca un gir de radi 1 per explicar radians.",
+      "Resol un triangle indicant què se sap i quin teorema és pertinent.",
+      "Varia amplitud, període i desplaçament en una gràfica."
+    ],
+    "errors": [
+      "Barrejar graus i radians.",
+      "Prendre l’arcsinus com l’única solució d’una equació trigonomètrica.",
+      "Oblidar valors absoluts en amplitud o període."
+    ],
+    "examples": [
+      {
+        "question": "Troba l’amplitud i el període de f(x)=3sin(x/4).",
+        "steps": [
+          "Amplitud: 3.",
+          "Freqüència angular: ω=1/4.",
+          "Període: T=2π/(1/4)=8π.",
+          "El primer màxim s’assoleix quan x/4=π/2: x=2π."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "En quin mode ha d’estar la calculadora per a aquesta expressió?",
+    "source": {
+      "sci": [
+        15,
+        19
+      ]
+    },
+    "tool": "calculus",
+    "expression": "3*sin(x/4)",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8
+    }
+  },
+  {
+    "id": "vectors2",
+    "title": "Vectors i producte escalar al pla",
+    "block": "Geometria",
+    "courses": [
+      "sci1"
+    ],
+    "prerequisites": "Coordenades, Pitàgores i trigonometria.",
+    "idea": "Un vector descriu un desplaçament i té mòdul, direcció i sentit. El punt és una posició; la resta de punts dona un vector. El producte escalar relaciona una expressió de coordenades amb un angle i permet decidir perpendicularitat sense dibuixos a escala.",
+    "formulas": [
+      {
+        "formula": "AB=B-A; |u|=√(u₁²+u₂²)",
+        "meaning": "Les coordenades d’un vector no depenen del punt on es dibuixa."
+      },
+      {
+        "formula": "u·v=u₁v₁+u₂v₂=|u||v|cosθ",
+        "meaning": "Si els vectors són no nuls, permet calcular l’angle."
+      },
+      {
+        "formula": "u·v=0",
+        "meaning": "Perpendicularitat de vectors no nuls."
+      }
+    ],
+    "sequence": [
+      "Compara dues fletxes iguals amb orígens diferents.",
+      "Construeix una suma amb la regla del paral·lelogram.",
+      "Diferencia producte per un escalar i producte escalar.",
+      "Interpreta els signes del producte com angles aguts o obtusos."
+    ],
+    "errors": [
+      "Confondre punt i vector.",
+      "Donar el producte escalar com un vector.",
+      "Calcular l’angle amb un vector nul."
+    ],
+    "examples": [
+      {
+        "question": "Siguin u=(3,4) i v=(4,-3). Calcula mòduls i angle.",
+        "steps": [
+          "",
+          "u",
+          "=",
+          "v",
+          "=5.",
+          "u·v=12-12=0.",
+          "Com que no són nuls, són perpendiculars.",
+          "L’angle és de 90 graus."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què afirma realment el producte escalar negatiu?",
+    "source": {
+      "sci": [
+        15,
+        16
+      ]
+    },
+    "tool": "geometry",
+    "expression": "x",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 6
+    }
+  },
+  {
+    "id": "geometry2",
+    "title": "Rectes, llocs geomètrics i transformacions",
+    "block": "Geometria",
+    "courses": [
+      "sci1"
+    ],
+    "prerequisites": "Vectors, equacions i distàncies al pla.",
+    "idea": "Una recta pot descriure’s per un punt i un vector director, per una equació general o per un pendent si no és vertical. Triar la representació adequada simplifica la resolució. Els llocs geomètrics es defineixen per una propietat compartida; les transformacions permeten estudiar invariants com distància i angle.",
+    "formulas": [
+      {
+        "formula": "(x,y)=(x₀,y₀)+t(u,v)",
+        "meaning": "Equació vectorial: admet també rectes verticals."
+      },
+      {
+        "formula": "ax+by+c=0; n=(a,b)",
+        "meaning": "Vector normal a la recta, amb (a,b)≠(0,0)."
+      },
+      {
+        "formula": "d(P,r)=|ax₀+by₀+c|/√(a²+b²)",
+        "meaning": "Distància punt-recta."
+      },
+      {
+        "formula": "(x-h)²+(y-k)²=r²",
+        "meaning": "Circumferència de centre (h,k) i radi r."
+      }
+    ],
+    "sequence": [
+      "Construeix una recta amb un punt i un desplaçament.",
+      "Tradueix entre representacions i comprova amb un punt.",
+      "Descriu una circumferència o mediatriu verbalment abans d’escriure l’equació.",
+      "Mostra un gir amb una matriu i comprova quines longituds conserva."
+    ],
+    "errors": [
+      "Forçar y=mx+b per a una recta vertical.",
+      "Confondre vector director i normal.",
+      "Llegir el centre d’una circumferència amb els signes canviats."
+    ],
+    "examples": [
+      {
+        "question": "Troba la mediatriu dels punts A=(0,0) i B=(4,2).",
+        "steps": [
+          "Punt mitjà M=(2,1).",
+          "El vector AB=(4,2) és normal a la mediatriu.",
+          "4(x-2)+2(y-1)=0, equivalent a 2x+y-5=0.",
+          "M pertany a la recta i qualsevol P que la satisfà té PA²=PB²."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què AB és normal i no director de la mediatriu?",
+    "source": {
+      "sci": [
+        15,
+        16
+      ]
+    },
+    "tool": "geometry",
+    "expression": "x",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8
+    }
+  },
+  {
+    "id": "matrices",
+    "title": "Matrius, determinants i inversa",
+    "block": "Àlgebra lineal",
+    "courses": [
+      "sci1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Operacions numèriques i representació de dades.",
+    "idea": "Una matriu ordena dades o representa una transformació. Les dimensions i el significat de files i columnes determinen quines operacions tenen sentit. El producte combina files amb columnes i generalment no commuta. El determinant i la inversa són eines per estudiar transformacions i sistemes quadrats, no criteris aïllats per memoritzar.",
+    "formulas": [
+      {
+        "formula": "(AB)ᵢⱼ=Σₖ aᵢₖbₖⱼ",
+        "meaning": "Si A és m×n i B és n×p, AB és m×p."
+      },
+      {
+        "formula": "det [[a,b],[c,d]]=ad-bc",
+        "meaning": "Només per a matrius quadrades."
+      },
+      {
+        "formula": "A⁻¹ existeix ⇔ det A≠0",
+        "meaning": "A A⁻¹=I; per a una matriu quadrada."
+      },
+      {
+        "formula": "A⁻¹=(1/(ad-bc))[[d,-b],[-c,a]]",
+        "meaning": "Fórmula 2×2, si el determinant és no nul."
+      }
+    ],
+    "sequence": [
+      "Escriu una taula amb etiquetes abans de convertir-la en matriu.",
+      "Prediu les dimensions i les unitats del resultat d’un producte.",
+      "Desenvolupa a mà una entrada com a suma de productes.",
+      "Relaciona determinant nul amb pèrdua d’informació.",
+      "Comprova una inversa multiplicant i obtenint la identitat."
+    ],
+    "errors": [
+      "Fer el producte entrada a entrada.",
+      "Suposar AB=BA.",
+      "Dir que det A=0 implica que qualsevol sistema amb A és incompatible.",
+      "Usar inversa amb matriu no quadrada."
+    ],
+    "examples": [
+      {
+        "question": "Una botiga ven dos productes. Quantitats A=[[2,3],[4,1]] i preus B=[[5],[10]]. Calcula ingressos.",
+        "steps": [
+          "A té dues files de comandes i dues columnes de productes.",
+          "AB és 2×1.",
+          "Primera comanda: 2·5+3·10=40; segona: 4·5+1·10=30.",
+          "Resultat [[40],[30]] euros, no una matriu de preus."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quines dimensions tindria una matriu amb tres preus per producte?",
+    "source": {
+      "sci": [
+        16,
+        20
+      ],
+      "soc": [
+        17
+      ]
+    },
+    "tool": "matrix",
+    "expression": "x",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 6,
+      "sci2": 5,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "systems",
+    "title": "Sistemes lineals i mètode de Gauss",
+    "block": "Àlgebra lineal",
+    "courses": [
+      "sci1",
+      "sci2",
+      "soc1",
+      "soc2"
+    ],
+    "prerequisites": "Equacions lineals, operacions amb files i modelització.",
+    "idea": "Un sistema agrupa condicions que s’han de complir alhora. Les operacions elementals conserven el conjunt de solucions. Cal distingir dades insuficients, dades contradictòries i dades suficients. Una variable lliure no és un error: expressa una família de solucions que el context pot restringir a nombres positius o enters.",
+    "formulas": [
+      {
+        "formula": "AX=b",
+        "meaning": "Forma matricial; b conté els termes independents."
+      },
+      {
+        "formula": "rang A < rang(A|b) ⇒ SI",
+        "meaning": "Sistema incompatible: cap solució."
+      },
+      {
+        "formula": "rang A = rang(A|b) = n ⇒ SCD",
+        "meaning": "Solució única amb n incògnites."
+      },
+      {
+        "formula": "rang A = rang(A|b) < n ⇒ SCI",
+        "meaning": "Infinites solucions sobre R; hi ha n-r variables lliures."
+      }
+    ],
+    "sequence": [
+      "Defineix les incògnites amb significat i unitats.",
+      "Tradueix cada frase a una equació diferent.",
+      "Escalona amb operacions de fila justificades, sense dividir per zero.",
+      "Llegeix files contradictòries i variables lliures.",
+      "Substitueix a les equacions originals i aplica restriccions contextuals."
+    ],
+    "errors": [
+      "Confondre equacions repetides amb informació nova.",
+      "Donar una única solució arbitrària d’un SCI.",
+      "Ometre la compatibilitat amb quantitats naturals.",
+      "No distingir rang de la matriu de coeficients i de l’ampliada."
+    ],
+    "examples": [
+      {
+        "question": "Resol x+y+z=6, x-y+z=2 i 2x+2z=8.",
+        "steps": [
+          "Restant les primeres equacions: 2y=4, per tant y=2.",
+          "Les dues primeres donen x+z=4. La tercera repeteix aquesta condició.",
+          "Hi ha una variable lliure: z=t; x=4-t; y=2.",
+          "És SCI. Si són quantitats no negatives, 0≤t≤4.",
+          "Si a més han de ser enters, només t=0,1,2,3,4 són admissibles."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quina equació addicional faria el sistema incompatible?",
+    "source": {
+      "sci": [
+        15,
+        20
+      ],
+      "soc": [
+        15,
+        18
+      ]
+    },
+    "tool": "system",
+    "expression": "x",
+    "hours": 10,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 7,
+      "soc2": 10
+    }
+  },
+  {
+    "id": "parameters",
+    "title": "Discussió de sistemes amb paràmetre",
+    "block": "Àlgebra lineal",
+    "courses": [
+      "sci2"
+    ],
+    "prerequisites": "Determinants, rang i Gauss.",
+    "idea": "El paràmetre selecciona un sistema dins una família. Primer es localitzen els valors que poden canviar el rang; després s’estudien separadament. Si el determinant és no nul, el sistema quadrat té solució única. Si és nul, cal mirar l’ampliada: podria haver-hi cap solució o infinites. Les operacions que divideixen per m-a són invàlides en el cas m=a.",
+    "formulas": [
+      {
+        "formula": "det A(m)≠0 ⇒ SCD",
+        "meaning": "Classificació genèrica dels sistemes quadrats."
+      },
+      {
+        "formula": "det A(m)=0 ⇒ comparar rangs",
+        "meaning": "No permet concloure SCI sense estudiar b."
+      },
+      {
+        "formula": "Nombre de paràmetres lliures = n-rang A",
+        "meaning": "Només per a sistemes compatibles."
+      }
+    ],
+    "sequence": [
+      "Escriu els valors exclosos al costat de qualsevol divisió algebraica.",
+      "Calcula i factoritza det A(m).",
+      "Crea una branca de resolució per a cada valor excepcional.",
+      "Substitueix cada valor en el sistema original i fes Gauss.",
+      "Interpreta els resultats com rectes o plans si el problema ho demana."
+    ],
+    "errors": [
+      "Tractar el paràmetre com una incògnita més sense que es demani.",
+      "Resoldre només det A=0 i aturar-se.",
+      "Perdre casos dividint per m-a.",
+      "Anomenar SCI un sistema amb una fila 0=1."
+    ],
+    "examples": [
+      {
+        "question": "Discuteix x+y=2 i x+my=3.",
+        "steps": [
+          "Determinant m-1.",
+          "Si m≠1, restant equacions: (m-1)y=1, y=1/(m-1), x=2-1/(m-1): SCD.",
+          "Si m=1, les equacions demanen x+y=2 i x+y=3 alhora: SI.",
+          "No existeix cap valor amb SCI en aquesta família."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què canviaria si el segon terme independent fos 2?",
+    "source": {
+      "sci": [
+        20
+      ]
+    },
+    "tool": "parameters",
+    "expression": "x",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 6
+    }
+  },
+  {
+    "id": "vectors3",
+    "title": "Vectors a l’espai: productes i mesures",
+    "block": "Geometria",
+    "courses": [
+      "sci2"
+    ],
+    "prerequisites": "Vectors al pla, determinants i trigonometria.",
+    "idea": "Afegir una tercera coordenada permet modelitzar posicions i moviments a l’espai. El producte escalar mesura alineament; el vectorial construeix un vector perpendicular i mesura una àrea; el mixt mesura un volum orientat. El resultat geomètric final d’àrea o volum es dona no negatiu.",
+    "formulas": [
+      {
+        "formula": "u·v=u₁v₁+u₂v₂+u₃v₃",
+        "meaning": "Angle entre vectors no nuls a partir del cosinus."
+      },
+      {
+        "formula": "u×v=(u₂v₃-u₃v₂,u₃v₁-u₁v₃,u₁v₂-u₂v₁)",
+        "meaning": "Perpendicular a tots dos; l’ordre en canvia el signe."
+      },
+      {
+        "formula": "A triangle=|AB×AC|/2",
+        "meaning": "L’àrea del paral·lelogram és el doble."
+      },
+      {
+        "formula": "V tetraedre=|AB·(AC×AD)|/6",
+        "meaning": "El producte mixt dona sis vegades el volum del tetraedre."
+      }
+    ],
+    "sequence": [
+      "Construeix vectors restant punts amb un origen comú.",
+      "Identifica abans del càlcul si es busca un nombre o un vector.",
+      "Comprova la perpendicularitat del producte vectorial amb productes escalars.",
+      "Relaciona el valor absolut i els factors 1/2 o 1/6 amb la geometria."
+    ],
+    "errors": [
+      "Confondre producte escalar amb vectorial.",
+      "Ometre el factor 1/6 d’un tetraedre.",
+      "Oblidar valor absolut en el volum.",
+      "Concloure alineació a partir d’un sol component nul."
+    ],
+    "examples": [
+      {
+        "question": "A=(0,0,0), B=(2,0,0), C=(0,3,0), D=(0,0,4). Calcula àrea ABC i volum ABCD.",
+        "steps": [
+          "AB=(2,0,0); AC=(0,3,0); AD=(0,0,4).",
+          "AB×AC=(0,0,6). Àrea ABC=6/2=3.",
+          "El producte mixt té mòdul 24.",
+          "Volum del tetraedre=24/6=4."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què indica un producte mixt nul?",
+    "source": {
+      "sci": [
+        18,
+        20
+      ]
+    },
+    "tool": "geometry",
+    "expression": "x",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 5
+    }
+  },
+  {
+    "id": "geometry3",
+    "title": "Rectes i plans: posicions, angles i distàncies",
+    "block": "Geometria",
+    "courses": [
+      "sci2"
+    ],
+    "prerequisites": "Vectors 3D, Gauss i productes.",
+    "idea": "Una recta es determina amb un punt i una direcció; un pla, amb un punt i dues direccions independents o amb un vector normal. Intersectar objectes és resoldre un sistema. A l’espai, dues rectes poden ser no paral·leles i no tallar-se: aleshores són creuades. Les distàncies es mesuren per la perpendicular.",
+    "formulas": [
+      {
+        "formula": "r: X=P+tu; π: ax+by+cz+d=0",
+        "meaning": "u és director de r; n=(a,b,c) és normal al pla."
+      },
+      {
+        "formula": "d(P,π)=|n·P+d|/|n|",
+        "meaning": "Amb n no nul."
+      },
+      {
+        "formula": "H=P-[(n·P+d)/(n·n)]n",
+        "meaning": "Projecció ortogonal de P sobre el pla."
+      },
+      {
+        "formula": "cosθ=|n₁·n₂|/(|n₁||n₂|)",
+        "meaning": "Angle agut entre plans; el valor absolut evita l’ambigüitat dels normals."
+      },
+      {
+        "formula": "sinα=|u·n|/(|u||n|)",
+        "meaning": "Angle agut entre recta i pla, no entre recta i normal."
+      }
+    ],
+    "sequence": [
+      "Identifica punts, vectors directors i normals amb etiquetes diferents.",
+      "Tria una forma d’equació que faciliti l’operació.",
+      "Per a interseccions, planteja i classifica un sistema.",
+      "Per a distàncies, dibuixa la perpendicular i comprova la projecció substituint-la al pla.",
+      "Justifica paral·lelisme o perpendicularitat amb productes, no amb la perspectiva del dibuix."
+    ],
+    "errors": [
+      "Dir que dues rectes no paral·leles sempre es tallen.",
+      "Utilitzar directament el cosinus de recta-normal com a angle recta-pla.",
+      "Confondre un punt del pla amb el seu vector normal."
+    ],
+    "examples": [
+      {
+        "question": "Troba la projecció de P=(1,2,3) sobre el pla x+y+z=0.",
+        "steps": [
+          "n=(1,1,1), n·P=6 i n·n=3.",
+          "H=P-2n=(-1,0,1).",
+          "H satisfà -1+0+1=0 i PH=(-2,-2,-2) és paral·lel al normal.",
+          "Distància=6/√3=2√3."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quina recta descriu el segment perpendicular PH?",
+    "source": {
+      "sci": [
+        19,
+        20
+      ]
+    },
+    "tool": "geometry",
+    "expression": "x",
+    "hours": 12,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 10
+    }
+  },
+  {
+    "id": "counting",
+    "title": "Combinatòria i recompte",
+    "block": "Probabilitat",
+    "courses": [
+      "sci1",
+      "soc1"
+    ],
+    "prerequisites": "Principi multiplicatiu i factorials.",
+    "idea": "Comptar sense enumerar exigeix fixar si importa l’ordre, si hi ha repeticions i si s’agafen tots els elements. El diagrama d’arbre ajuda a justificar una fórmula. El recompte fonamenta probabilitats i coeficients binomials, però una resposta combinatòria no implica que totes les opcions tinguin la mateixa probabilitat.",
+    "formulas": [
+      {
+        "formula": "n!=n(n-1)···1; 0!=1",
+        "meaning": "Permutacions de n elements diferents."
+      },
+      {
+        "formula": "V(n,k)=n!/(n-k)!",
+        "meaning": "Ordre rellevant, sense repetició."
+      },
+      {
+        "formula": "C(n,k)=n!/[k!(n-k)!]",
+        "meaning": "Ordre irrellevant, sense repetició."
+      },
+      {
+        "formula": "n^k",
+        "meaning": "k eleccions ordenades amb n opcions i repetició permesa."
+      }
+    ],
+    "sequence": [
+      "Comença amb un cas petit que es pugui enumerar.",
+      "Pregunta explícitament si AB i BA són diferents.",
+      "Generalitza amb productes i justifica qualsevol divisió per factorials.",
+      "Comprova la resposta amb un cas límit k=0 o k=n."
+    ],
+    "errors": [
+      "Escollir una fórmula per paraules clau sense interpretar.",
+      "Comptar dues vegades un grup sense ordre.",
+      "Suposar equiprobabilitat sense justificar-la."
+    ],
+    "examples": [
+      {
+        "question": "De 8 persones se n’escullen 3 per a una comissió. Quantes comissions diferents hi ha?",
+        "steps": [
+          "L’ordre no importa i no es repeteixen persones.",
+          "Amb ordre hi ha 8·7·6=336 eleccions.",
+          "Cada comissió es compta 3!=6 vegades.",
+          "C(8,3)=336/6=56."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Com canviaria si els tres llocs fossin presidència, secretaria i tresoreria?",
+    "source": {
+      "sci": [
+        16,
+        17
+      ],
+      "soc": [
+        15
+      ]
+    },
+    "tool": "binomial",
+    "expression": "x",
+    "hours": 4,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 4,
+      "soc1": 4
+    }
+  },
+  {
+    "id": "probability",
+    "title": "Successos i probabilitat condicionada",
+    "block": "Probabilitat",
+    "courses": [
+      "sci1",
+      "soc1",
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Fraccions, percentatges, conjunts i recompte.",
+    "idea": "La probabilitat condicionada canvia l’univers de referència: si sabem B, només observem els casos dins B. La independència significa que saber B no altera la probabilitat d’A. No és el mateix que incompatibilitat: dos successos incompatibles de probabilitat positiva no poden ser independents.",
+    "formulas": [
+      {
+        "formula": "P(A∪B)=P(A)+P(B)-P(A∩B)",
+        "meaning": "Evita comptar dues vegades la intersecció."
+      },
+      {
+        "formula": "P(A|B)=P(A∩B)/P(B)",
+        "meaning": "Només si P(B)>0."
+      },
+      {
+        "formula": "P(A∩B)=P(A)P(B|A)",
+        "meaning": "Regla del producte; no exigeix independència."
+      },
+      {
+        "formula": "A i B independents ⇔ P(A∩B)=P(A)P(B)",
+        "meaning": "Converteix la independència en una igualtat comprovable."
+      }
+    ],
+    "sequence": [
+      "Construeix una taula amb freqüències abans de treballar decimals.",
+      "Restringeix visualment la taula al succés condicionant.",
+      "Distingeix almenys un, exactament un i tots dos.",
+      "Comprova independència amb el producte, no amb la intuïció."
+    ],
+    "errors": [
+      "Intercanviar P(A",
+      "B) i P(B",
+      "A).",
+      "Sumar probabilitats de successos no disjunts sense restar intersecció.",
+      "Tractar extraccions sense reemplaçament com independents."
+    ],
+    "examples": [
+      {
+        "question": "P(A)=0,4, P(B)=0,5 i P(A∩B)=0,1. Calcula P(A∪B), P(A|B) i estudia independència.",
+        "steps": [
+          "Unió: 0,4+0,5-0,1=0,8.",
+          "Condicionada: 0,1/0,5=0,2.",
+          "P(A)P(B)=0,2, diferent de 0,1.",
+          "No són independents; tampoc incompatibles, perquè la intersecció no és nul·la."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quin denominador correspon a P(B|A)?",
+    "source": {
+      "sci": [
+        17,
+        21
+      ],
+      "soc": [
+        16,
+        19
+      ]
+    },
+    "tool": "bayes",
+    "expression": "x",
+    "hours": 8,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8,
+      "soc1": 8,
+      "sci2": 4,
+      "soc2": 4
+    }
+  },
+  {
+    "id": "bayes",
+    "title": "Probabilitat total i teorema de Bayes",
+    "block": "Probabilitat",
+    "courses": [
+      "sci2",
+      "soc2"
+    ],
+    "prerequisites": "Condicionades, diagrames d’arbre i particions.",
+    "idea": "La probabilitat total combina camins excloents que cobreixen tot l’espai mostral. Bayes recorre el raonament a l’inrevés: observat un resultat, actualitza el pes de les possibles procedències. Les probabilitats inicials importen; una prova molt sensible no implica, per si sola, una probabilitat posterior molt alta.",
+    "formulas": [
+      {
+        "formula": "P(B)=Σ P(Aᵢ)P(B|Aᵢ)",
+        "meaning": "Els Aᵢ formen una partició: disjunts i exhaustius."
+      },
+      {
+        "formula": "P(Aⱼ|B)=P(Aⱼ)P(B|Aⱼ)/P(B)",
+        "meaning": "Requereix P(B)>0."
+      }
+    ],
+    "sequence": [
+      "Escriu primer les branques de procedència i comprova que sumen 1.",
+      "Afegeix condicionades i complements dins cada branca.",
+      "Multiplica al llarg de cada camí i suma camins compatibles amb l’evidència.",
+      "Per a Bayes, divideix el camí favorable entre tots els camins amb la mateixa evidència.",
+      "Repeteix amb freqüències sobre 1000 objectes per verificar el denominador."
+    ],
+    "errors": [
+      "Usar una proporció global com a condicionada.",
+      "Posar P(A) al denominador quan es condiciona per B.",
+      "No incloure totes les procedències."
+    ],
+    "examples": [
+      {
+        "question": "El 60% de peces ve d’A, amb 2% de defectes, i el 40% de B, amb 5%. Una peça és defectuosa: probabilitat que vingui de B?",
+        "steps": [
+          "P(D)=0,6·0,02+0,4·0,05=0,032.",
+          "P(B∩D)=0,4·0,05=0,020.",
+          "P(B",
+          "D)=0,020/0,032=0,625.",
+          "Entre 1000 peces esperades, 12 defectes són d’A i 20 de B: 20/32 confirma el resultat."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Per què el resultat no és ni 0,4 ni 0,05?",
+    "source": {
+      "sci": [
+        21
+      ],
+      "soc": [
+        19
+      ]
+    },
+    "tool": "bayes",
+    "expression": "x",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci2": 5,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "stats",
+    "title": "Estadística descriptiva i mostreig",
+    "block": "Estadística",
+    "courses": [
+      "sci1",
+      "soc1"
+    ],
+    "prerequisites": "Tipus de variables, lectura de taules i mitjana.",
+    "idea": "Les dades individuals i la seva distribució no són el mateix. Cal escollir gràfics i mesures adequats al tipus de variable i a la pregunta. La mitjana resumeix posició i la desviació típica dispersió; la mediana és més resistent a valors extrems. Cap càlcul repara automàticament una mostra esbiaixada.",
+    "formulas": [
+      {
+        "formula": "mitjana=Σxᵢ/n",
+        "meaning": "Amb freqüències: Σ fᵢxᵢ/n."
+      },
+      {
+        "formula": "σ²=Σ(xᵢ-mitjana)²/n",
+        "meaning": "Descripció del conjunt complet de dades."
+      },
+      {
+        "formula": "s²=Σ(xᵢ-mitjana)²/(n-1)",
+        "meaning": "Variància mostral corregida; no confondre els dos denominadors."
+      }
+    ],
+    "sequence": [
+      "Formula la pregunta i identifica població i mostra.",
+      "Decideix si la variable és qualitativa, discreta o contínua.",
+      "Dibuixa la distribució abans de resumir-la.",
+      "Calcula dues mesures de posició i una de dispersió.",
+      "Discuteix representativitat, dades perdudes i valors extrems."
+    ],
+    "errors": [
+      "Confondre mostra gran amb mostra representativa.",
+      "Comparar mitjanes sense mirar dispersió.",
+      "Usar n i n-1 indistintament.",
+      "Aplicar una mitjana a categories sense escala numèrica."
+    ],
+    "examples": [
+      {
+        "question": "Per a les dades 2, 4 i 6, calcula mitjana, mediana i les dues desviacions.",
+        "steps": [
+          "Mitjana=12/3=4; mediana=4.",
+          "Suma de quadrats respecte de 4: 4+0+4=8.",
+          "Desviació descriptiva: √(8/3)≈1,633.",
+          "Desviació mostral corregida: √(8/2)=2."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quin denominador farà servir el teu interval de confiança quan et donen s?",
+    "source": {
+      "sci": [
+        17
+      ],
+      "soc": [
+        15,
+        16
+      ]
+    },
+    "tool": "statistics",
+    "expression": "x",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 8,
+      "soc1": 6
+    }
+  },
+  {
+    "id": "regression",
+    "title": "Dades bivariants i regressió",
+    "block": "Estadística",
+    "courses": [
+      "sci1",
+      "soc1"
+    ],
+    "prerequisites": "Mitjanes, variància, núvol de punts i rectes.",
+    "idea": "La regressió ajusta un model a la relació entre dues variables. La correlació lineal mesura intensitat i sentit d’una associació lineal, no causalitat. Un coeficient proper a zero no exclou una relació no lineal. El currículum demana contrastar ajustaments lineals i quadràtics; el laboratori calcula l’ajust lineal i la resta es pot raonar amb gràfics i residus.",
+    "formulas": [
+      {
+        "formula": "b=Σ(xᵢ-x̄)(yᵢ-ȳ)/Σ(xᵢ-x̄)²",
+        "meaning": "Pendent de la recta de mínims quadrats de y sobre x."
+      },
+      {
+        "formula": "a=ȳ-bx̄; y estimada=a+bx",
+        "meaning": "La recta passa pel centre de gravetat del núvol."
+      },
+      {
+        "formula": "r=Sxy/√(Sxx Syy)",
+        "meaning": "Definit quan les dues variables tenen variància positiva; -1≤r≤1."
+      }
+    ],
+    "sequence": [
+      "Mostra primer el núvol: no comencis pel coeficient.",
+      "Explica que l’ajust minimitza quadrats de residus verticals.",
+      "Calcula la recta i comprova el pas per (x̄,ȳ).",
+      "Compara un ajust lineal amb dades en forma de paràbola.",
+      "Discuteix si una predicció és interpolació o extrapolació."
+    ],
+    "errors": [
+      "Confondre correlació i causalitat.",
+      "Extrapolar molt lluny sense justificació.",
+      "Interpretar r=0 com absència de qualsevol relació.",
+      "Invertir una regressió sense tornar a ajustar."
+    ],
+    "examples": [
+      {
+        "question": "Ajusta una recta als punts (1,2), (2,4) i (3,6).",
+        "steps": [
+          "x̄=2 i ȳ=4.",
+          "Sxx=2; Sxy=4, per tant b=2.",
+          "a=4-2·2=0. Recta y=2x.",
+          "r=1: alineament perfecte en aquestes dades, sense prova de causalitat."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què esperaries de r per a punts simètrics d’una paràbola?",
+    "source": {
+      "sci": [
+        17
+      ],
+      "soc": [
+        16
+      ]
+    },
+    "tool": "statistics",
+    "expression": "x",
+    "hours": 6,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "sci1": 10,
+      "soc1": 6
+    }
+  },
+  {
+    "id": "binomial",
+    "title": "Distribució binomial",
+    "block": "Probabilitat",
+    "courses": [
+      "sci2",
+      "soc1",
+      "soc2"
+    ],
+    "prerequisites": "Recompte, independència i probabilitat.",
+    "idea": "La binomial compta èxits en un nombre fix d’assaigs independents amb una mateixa probabilitat p. No serveix automàticament per a qualsevol recompte. L’expressió combina la probabilitat d’una seqüència concreta amb el nombre de seqüències amb k èxits.",
+    "formulas": [
+      {
+        "formula": "X∼Bin(n,p); P(X=k)=C(n,k)p^k(1-p)^(n-k)",
+        "meaning": "n fix, assaigs independents i p constant."
+      },
+      {
+        "formula": "E(X)=np; Var(X)=np(1-p)",
+        "meaning": "La desviació típica és √(np(1-p)), no la variància."
+      },
+      {
+        "formula": "P(X≥k)=1-P(X≤k-1)",
+        "meaning": "Complement amb el desplaçament correcte d’un enter."
+      }
+    ],
+    "sequence": [
+      "Defineix explícitament què es considera èxit.",
+      "Comprova les quatre hipòtesis del model.",
+      "Deriva la fórmula amb un exemple de poques repeticions.",
+      "Tradueix almenys, com a molt i exactament a desigualtats enteres.",
+      "Compara una massa puntual amb una probabilitat acumulada."
+    ],
+    "errors": [
+      "Usar binomial en extraccions sense reemplaçament d’una població petita.",
+      "Ometre el coeficient combinatori.",
+      "Confondre P(X≥k) amb 1-P(X≤k)."
+    ],
+    "examples": [
+      {
+        "question": "En 5 assaigs independents amb p=0,2, calcula exactament 2 èxits i almenys 1.",
+        "steps": [
+          "P(X=2)=C(5,2)(0,2)²(0,8)³.",
+          "Resultat: 10·0,04·0,512=0,2048.",
+          "P(X≥1)=1-P(X=0)=1-(0,8)^5=0,67232.",
+          "L’esperança és np=1, no el nombre segur d’èxits."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Com explicaries que l’esperança pot no ser un enter?",
+    "source": {
+      "sci": [
+        21
+      ],
+      "soc": [
+        16,
+        19
+      ]
+    },
+    "tool": "binomial",
+    "expression": "x",
+    "hours": 7,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "soc1": 8,
+      "sci2": 5,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "normal",
+    "title": "Distribució normal i aproximació",
+    "block": "Estadística",
+    "courses": [
+      "sci2",
+      "soc1",
+      "soc2"
+    ],
+    "prerequisites": "Àrea, variables contínues, mitjana i desviació.",
+    "idea": "En una variable contínua, les probabilitats són àrees i un valor exacte té probabilitat zero. La normal es descriu amb mitjana i dispersió. Cal declarar si el segon paràmetre representa variància o desviació: l’app sempre demana sigma, la desviació. El currículum de Matemàtiques II inclou normal, però no apareix com a contingut enumerat a la guia PAU de Matemàtiques 2026 consultada; no s’elimina del curs.",
+    "formulas": [
+      {
+        "formula": "Z=(X-μ)/σ",
+        "meaning": "Tipificació amb σ>0."
+      },
+      {
+        "formula": "P(a≤X≤b)=Φ((b-μ)/σ)-Φ((a-μ)/σ)",
+        "meaning": "Φ és la distribució acumulada de la normal estàndard."
+      },
+      {
+        "formula": "Bin(n,p) ≈ N amb μ=np, σ=√(np(1-p))",
+        "meaning": "Aproximació raonable amb np i n(1-p) prou grans; no és una identitat."
+      },
+      {
+        "formula": "P(X≤k) ≈ P(Y≤k+0,5)",
+        "meaning": "Correcció de continuïtat habitual; segueix l’enunciat si explícitament demana no fer-la."
+      }
+    ],
+    "sequence": [
+      "Dibuixa la campana i ombreja la probabilitat abans de calcular.",
+      "Explica tipificar com mesurar distàncies en desviacions típiques.",
+      "Treballa cues dretes, esquerres i intervals.",
+      "En aproximar una binomial, contrasta càlcul exacte i aproximat amb i sense correcció."
+    ],
+    "errors": [
+      "Dividir per la variància en lloc de per sigma.",
+      "Confondre densitat i probabilitat puntual.",
+      "Aplicar una aproximació amb p extrem i n insuficient.",
+      "Fer correcció de continuïtat quan l’enunciat diu que no es faci."
+    ],
+    "examples": [
+      {
+        "question": "X és normal de mitjana 100 i desviació 10. Calcula P(90≤X≤110).",
+        "steps": [
+          "Tipificació: els extrems són -1 i 1.",
+          "P=Φ(1)-Φ(-1).",
+          "Aproximadament 0,682689.",
+          "La probabilitat X=100 exactament és zero encara que la densitat hi sigui màxima."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "En la notació N(100,100), quina convenció cal aclarir abans de calcular?",
+    "source": {
+      "sci": [
+        21
+      ],
+      "soc": [
+        16,
+        19
+      ]
+    },
+    "tool": "normal",
+    "expression": "x",
+    "hours": 7,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "soc1": 8,
+      "sci2": 4,
+      "soc2": 6
+    }
+  },
+  {
+    "id": "inference",
+    "title": "Inferència i intervals de confiança",
+    "block": "Estadística",
+    "courses": [
+      "soc2"
+    ],
+    "prerequisites": "Mostreig, distribució normal i estadística descriptiva.",
+    "idea": "La inferència estudia què permet afirmar una mostra sobre una població i amb quina incertesa. Primer cal identificar el paràmetre: una mitjana no és una proporció. El nivell de confiança és una propietat del procediment de construcció d’intervals en mostres repetides. No vol dir que el percentatge corresponent de dades individuals caigui dins l’interval.",
+    "formulas": [
+      {
+        "formula": "IC mitjana, sigma coneguda: x̄ ± z·σ/√n",
+        "meaning": "Població normal o aproximació justificada; mostra aleatòria i independent."
+      },
+      {
+        "formula": "IC mitjana, mostra gran: x̄ ± z·s/√n",
+        "meaning": "Aproximació normal amb sigma desconeguda; per a mostra petita s’ha de considerar t de Student."
+      },
+      {
+        "formula": "IC proporció: p estimada ± z√[p estimada(1-p estimada)/n]",
+        "meaning": "Interval de Wald per a mostra gran; verificar prou èxits i fracassos."
+      },
+      {
+        "formula": "n ≥ (zσ/E)²",
+        "meaning": "Mida per a un marge E amb sigma coneguda: arrodoneix cap amunt."
+      }
+    ],
+    "sequence": [
+      "Subratlla la població, la mostra i el paràmetre desconegut.",
+      "Diferencia sigma coneguda de s calculada a partir de dades.",
+      "Dona sentit al marge: variabilitat dividida per l’arrel de la mida.",
+      "Construeix l’interval amb unitats i interpreta la seva cobertura.",
+      "Diferencia incompatibilitat amb una hipòtesi, absència d’evidència i prova de la hipòtesi."
+    ],
+    "errors": [
+      "Usar l’interval d’una mitjana per respondre sobre un percentatge sense hipòtesis addicionals.",
+      "Dir que un valor dins l’interval queda demostrat.",
+      "Ometre el factor √n.",
+      "Aplicar Wald amb molt pocs èxits."
+    ],
+    "examples": [
+      {
+        "question": "Una mostra aleatòria de 100 observacions té mitjana 50. Sigma poblacional coneguda=10. Dona un IC del 95%.",
+        "steps": [
+          "Error estàndard=10/√100=1.",
+          "Per al 95%, z≈1,96; marge≈1,96.",
+          "Interval aproximat [48,04;51,96].",
+          "No descriu el rang del 95% d’observacions: estima la mitjana poblacional.",
+          "El procediment cobreix la mitjana en aproximadament el 95% de mostres sota les hipòtesis."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      },
+      {
+        "question": "Estima una proporció amb 120 èxits sobre 200 i confiança 95%.",
+        "steps": [
+          "p estimada=120/200=0,6.",
+          "Hi ha 120 èxits i 80 fracassos: l’aproximació normal és raonable.",
+          "Error estàndard=√(0,6·0,4/200)≈0,034641.",
+          "Marge≈1,96·0,034641=0,067896. IC≈[0,5321;0,6679]."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Què canvia si quadrupliquem n i mantenim la resta?",
+    "source": {
+      "soc": [
+        19
+      ]
+    },
+    "tool": "confidence",
+    "expression": "x",
+    "hours": 12,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "soc2": 12
+    }
+  },
+  {
+    "id": "finance",
+    "title": "Educació financera i recurrències",
+    "block": "Fonaments",
+    "courses": [
+      "soc1"
+    ],
+    "prerequisites": "Percentatges, progressions i potències.",
+    "idea": "El currículum de primer inclou interessos, quotes, amortització i préstecs. El model ha d’explicitar la periodicitat, el tipus i quan es fan els pagaments. La calculadora de l’app és una eina didàctica de models ideals, sense comissions, impostos, assegurances ni condicions contractuals; no calcula una oferta bancària real.",
+    "formulas": [
+      {
+        "formula": "Cₙ=C₀(1+i)^n",
+        "meaning": "Capitalització composta amb i per període."
+      },
+      {
+        "formula": "q=C₀ i/[1-(1+i)^(-n)]",
+        "meaning": "Quota constant postpagable, tipus fix i sense despeses; si i=0, q=C₀/n."
+      },
+      {
+        "formula": "Dₖ₊₁=Dₖ(1+i)-q",
+        "meaning": "Recurrència del deute després de cada pagament."
+      }
+    ],
+    "sequence": [
+      "Compara increments fixos amb percentatges successius.",
+      "Fixa una mateixa unitat temporal per a i i n.",
+      "Construeix dues files d’un quadre d’amortització a mà.",
+      "Explica quina part de la quota paga interessos i quina redueix capital.",
+      "Contrasta els supòsits del model amb allò que no hi està inclòs."
+    ],
+    "errors": [
+      "Barrejar tipus anual amb nombre de mesos.",
+      "Confondre tipus nominal i efectiu.",
+      "Sumar percentatges de períodes successius.",
+      "Confondre quota total i amortització de capital."
+    ],
+    "examples": [
+      {
+        "question": "Un capital de 1000 creix al 2% per període durant 3 períodes. Calcula el capital final.",
+        "steps": [
+          "Model: Cₙ=1000(1,02)^n.",
+          "C₃=1061,208.",
+          "L’increment és 61,208, no exactament 60.",
+          "Cada període calcula interessos sobre el capital acumulat."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quina informació falta abans de comparar dues quotes mensuals?",
+    "source": {
+      "soc": [
+        14
+      ]
+    },
+    "tool": "finance",
+    "expression": "x",
+    "hours": 7,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ],
+    "sessions": {
+      "soc1": 8
+    }
+  },
+  {
+    "id": "transversal",
+    "title": "Raonament, comunicació i avaluació",
+    "block": "Transversal",
+    "courses": [
+      "sci1",
+      "sci2",
+      "soc1",
+      "soc2"
+    ],
+    "prerequisites": "Es treballa en paral·lel a tots els blocs.",
+    "idea": "El currículum no es redueix a una relació de continguts de prova. Modelitzar, conjecturar, justificar, connectar representacions, comunicar i gestionar l’error formen part dels aprenentatges. L’app separa els sabers oficials, la seva seqüenciació docent i la presència observada a les PAU. Les associacions amb criteris d’avaluació són propostes, no correspondències normatives unívoques.",
+    "formulas": [
+      {
+        "formula": "Model → estratègia → càlcul → validació → interpretació",
+        "meaning": "Estructura proposada per a una resposta matemàtica completa."
+      },
+      {
+        "formula": "Exemple ≠ demostració; contraexemple ⇒ refutació",
+        "meaning": "Una afirmació universal necessita una justificació general."
+      }
+    ],
+    "sequence": [
+      "Comença una sessió amb una predicció raonada.",
+      "Fes visible una estratègia alternativa, no només el resultat.",
+      "Analitza un error anonimitzat i la idea que el produeix.",
+      "Demana una comprovació independent i una conclusió contextual.",
+      "Tanca amb una pregunta de transferència i una breu reflexió sobre el procediment."
+    ],
+    "errors": [
+      "Convertir tots els criteris en una nota de càlcul.",
+      "Confondre rapidesa amb comprensió.",
+      "Identificar absència en una mostra d’exàmens amb absència del currículum."
+    ],
+    "examples": [
+      {
+        "question": "Analitza l’afirmació: si f′(0)=0, aleshores f té un extrem a zero.",
+        "steps": [
+          "L’afirmació és universal.",
+          "Considera f(x)=x³.",
+          "f′(0)=0, però f creix a banda i banda de zero.",
+          "Un contraexemple refuta l’afirmació; cal canvi de signe de f′ per aplicar aquest criteri d’extrem."
+        ],
+        "origin": "Exemple propi, no és un enunciat PAU"
+      }
+    ],
+    "exit": "Quin criteri avalua la justificació i quin la representació?",
+    "source": {
+      "sci": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "soc": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "tool": "calculus",
+    "expression": "x^3",
+    "hours": 4,
+    "criteria": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "5.2",
+      "7.2",
+      "8.1"
+    ]
+  }
+]

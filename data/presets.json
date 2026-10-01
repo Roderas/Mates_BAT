@@ -1,0 +1,234 @@
+[
+  {
+    "id": "24-arrel",
+    "question": "sci-2024-ext-1",
+    "label": "Bolzano: aproxima l’arrel",
+    "tool": "equation",
+    "params": {
+      "f": "3*x^13+5*x^3+2",
+      "mode": "bisect",
+      "lo": "-1",
+      "hi": "-0.5"
+    },
+    "note": "La bisecció aproxima l’arrel; la unicitat s’ha de justificar analíticament amb la derivada.",
+    "correctionPage": 1,
+    "plot": {}
+  },
+  {
+    "id": "24-parametre",
+    "question": "sci-2024-ext-2",
+    "label": "Discuteix el sistema amb m",
+    "tool": "parameters",
+    "params": {
+      "A": "1 -3 m -2\n1 m 2 3\n1 1 2 m",
+      "m": "0"
+    },
+    "note": "Dades de l’apartat a. S’exploren m=1, m=2 i el valor concret triat. La restricció addicional de l’apartat c no s’aplica automàticament.",
+    "correctionPage": 2,
+    "plot": {}
+  },
+  {
+    "id": "24-area",
+    "question": "sci-2024-ext-3",
+    "label": "Calcula l’àrea puntejada",
+    "tool": "calculus",
+    "params": {
+      "f": "-((x-1)/2)^2+4-(x^3-4*x^2+4*x)",
+      "a": "1",
+      "lo": "0",
+      "hi": "3",
+      "area": "signed"
+    },
+    "note": "Es carrega g-f a [0,3], corresponent a la regió puntejada. La resta del logotip s’ha de tractar separadament. Tangent a x=1: exploració afegida, no demanda de l’apartat.",
+    "correctionPage": 4,
+    "plot": {
+      "xmin": 0,
+      "xmax": 3,
+      "ymin": -1,
+      "ymax": 5
+    }
+  },
+  {
+    "id": "24-binomial",
+    "question": "sci-2024-ext-4",
+    "label": "Binomial: almenys un cas",
+    "tool": "binomial",
+    "params": {
+      "n": "4",
+      "p": "0.2",
+      "lo": "1",
+      "hi": "4",
+      "correction": "yes"
+    },
+    "note": "Model hipotètic de l’examen: P(N≥1). La comparació normal és una exploració addicional poc fiable amb n tan petit.",
+    "correctionPage": 5,
+    "plot": {}
+  },
+  {
+    "id": "24-bayes",
+    "question": "sci-2024-ext-4",
+    "label": "Bayes donat resultat negatiu",
+    "tool": "bayes",
+    "params": {
+      "prior": "0.2 0.8",
+      "likelihood": "0.05 0.995"
+    },
+    "note": "A1 representa la condició estudiada i E és un resultat negatiu de la prova hipotètica. S’han complementat les probabilitats de diagnòstic positiu. No són dades clíniques per a decisions reals.",
+    "correctionPage": 5,
+    "plot": {}
+  },
+  {
+    "id": "25-racional",
+    "question": "sci-2025-ord-1",
+    "label": "Explora la funció racional",
+    "tool": "calculus",
+    "params": {
+      "f": "(x^2-2*x)/(x-1)",
+      "a": "0",
+      "lo": "2",
+      "hi": "3",
+      "area": "signed"
+    },
+    "note": "Es carrega la funció original. El punt a=0 i la integral [2,3] són controls exploratoris editables, no la resolució completa de les condicions sobre tangents.",
+    "correctionPage": 1,
+    "plot": {
+      "xmin": -3,
+      "xmax": 5,
+      "ymin": -6,
+      "ymax": 6
+    }
+  },
+  {
+    "id": "26-racional",
+    "question": "sci-2026-ext-1",
+    "label": "Explora derivades i gràfica",
+    "tool": "calculus",
+    "params": {
+      "f": "5*x/(x^2+1)",
+      "a": "0",
+      "lo": "-1",
+      "hi": "1",
+      "area": "signed"
+    },
+    "note": "Funció de l’exercici. El punt de tangent/normal a=0 i els límits d’integració són valors exploratoris: adapta’ls a l’apartat que treballis.",
+    "correctionPage": 1,
+    "plot": {
+      "xmin": -4,
+      "xmax": 4,
+      "ymin": -3,
+      "ymax": 3
+    }
+  },
+  {
+    "id": "26-pala",
+    "question": "sci-2026-ext-3",
+    "label": "Àrea geomètrica entre les corbes",
+    "tool": "calculus",
+    "params": {
+      "f": "8*x-2*x^3",
+      "a": "0",
+      "lo": "-2",
+      "hi": "2",
+      "area": "geometric"
+    },
+    "note": "Es carrega g-f. Les interseccions són -2, 0 i 2: la integral amb signe es cancel·laria; la integral del valor absolut suma les dues regions de la figura.",
+    "correctionPage": 4,
+    "plot": {
+      "xmin": -2.2,
+      "xmax": 2.2,
+      "ymin": -7,
+      "ymax": 7
+    }
+  },
+  {
+    "id": "26-seguidors",
+    "question": "soc-2026-ord-1",
+    "label": "Estudia la funció de seguidors",
+    "tool": "calculus",
+    "params": {
+      "f": "10*x^3-120*x^2+450*x+700",
+      "a": "3",
+      "lo": "0",
+      "hi": "10",
+      "area": "signed"
+    },
+    "note": "S’ha reanomenat t com a x per al motor. El model s’estudia entre 0 i 10 setmanes; cal comparar també els extrems del domini. La integral del laboratori és una extensió, no una pregunta de l’examen.",
+    "correctionPage": 1,
+    "plot": {
+      "xmin": 0,
+      "xmax": 10,
+      "ymin": 0,
+      "ymax": 3500
+    }
+  },
+  {
+    "id": "26-fruita",
+    "question": "soc-2026-ord-2",
+    "label": "Resol el sistema inicial de preus",
+    "tool": "system",
+    "params": {
+      "A": "5 3 4 120\n2 1 3 56"
+    },
+    "note": "S’ha transcrit el sistema inicial, que té un paràmetre lliure. La nova informació de l’apartat 2.2 es pot afegir com a fila 0 1 0 12.5.",
+    "correctionPage": 3,
+    "plot": {}
+  },
+  {
+    "id": "26-binomial",
+    "question": "soc-2026-ord-3",
+    "label": "Compara binomial i normal sense correcció",
+    "tool": "binomial",
+    "params": {
+      "n": "2500",
+      "p": "0.5",
+      "lo": "0",
+      "hi": "1299",
+      "correction": "no"
+    },
+    "note": "Dades de l’apartat 3.1. El criteri empra z=1,96 i una aproximació normal sense correcció de continuïtat. La probabilitat binomial calculada per recurrència no ha de coincidir exactament amb l’aproximació.",
+    "correctionPage": 5,
+    "plot": {}
+  },
+  {
+    "id": "26-interval",
+    "question": "soc-2026-ord-3",
+    "label": "Calcula l’interval de la mitjana",
+    "tool": "confidence",
+    "params": {
+      "kind": "sample",
+      "center": "2.95",
+      "spread": "0.38",
+      "n": "2500",
+      "level": "0.95"
+    },
+    "note": "Apartat 3.2: aproximació normal amb mostra gran i sigma desconeguda. Per inferir un percentatge de webs sota 3 s, el criteri v2 afegeix la hipòtesi de normalitat; la mitjana sola no determina aquest percentatge.",
+    "correctionPage": 6,
+    "plot": {}
+  },
+  {
+    "id": "26-matriu",
+    "question": "soc-2026-ord-4A",
+    "label": "Totals per nivell amb matrius",
+    "tool": "matrix",
+    "params": {
+      "A": "1 1 1",
+      "B": "450 172 41\n445 178 45\n438 183 48",
+      "operation": "multiply"
+    },
+    "note": "Primer producte de l’apartat matricial: suma de les files de la taula. Per calcular l’import total, cal el segon producte amb els preus del PDF.",
+    "correctionPage": 9,
+    "plot": {}
+  },
+  {
+    "id": "26-beques",
+    "question": "soc-2026-ord-4B",
+    "label": "Resol el repartiment de beques",
+    "tool": "system",
+    "params": {
+      "A": "1 1 1 1036\n1 1 0 933\n0 1 -1 0"
+    },
+    "note": "Sistema de l’apartat 4.2. Les incògnites són beques de grau, màster i doctorat, en aquest ordre.",
+    "correctionPage": 12,
+    "plot": {}
+  }
+]
